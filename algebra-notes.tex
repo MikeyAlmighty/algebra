@@ -43,47 +43,271 @@
 % ------------------------
 \section{Introduction}
 
-Algebra
-
 This document contains concise notes, worked examples, and practice problems to help rebuild my algebra foundation.
 
 % ------------------------
 \section{Algebra Basics}
 
-\subsection{Variables and Constants}
+\subsection{Constants}
 
-A \textbf{variable} is a symbol (often a letter) that represents a number. A \textbf{constant} is a fixed value.
+A \textbf{constant} is a fixed value that does not change. Unlike a \textbf{variable}, which can represent different numbers, a \textbf{constant} always has the same value.
 
-Example:
-\[
-x + 3 = 7 \quad \Rightarrow \quad x = 4
-\]
+Examples of \textbf{constant} include:
 
-\subsection{Order of Operations}
-
-Remember PEMDAS:
 \begin{itemize}
-  \item \textbf{P}arentheses
-  \item \textbf{E}xponents
-  \item \textbf{MD} Multiplication and Division (left to right)
-  \item \textbf{AS} Addition and Subtraction (left to right)
+  \item Specific numbers like \( 2 \), \( -7 \), or \( \frac{1}{2} \)
+  \item Mathematical constants like \( \pi \approx 3.1416 \) or \( e \approx 2.718 \)
 \end{itemize}
 
+In the equation:
 \[
-2 + 3 \times (4^2 - 1) = 2 + 3 \times (16 - 1) = 2 + 3 \times 15 = 47
+x + 3 = 7
+\]
+the number \( 3 \) and \( 7 \) are constants — they stay the same, while \( x \) is the variable we solve for.
+
+\subsection{Variables}
+
+A \textbf{variable} is a symbol, usually a letter like \( x \), \( y \), or \( z \), that represents an unknown or changeable value.
+
+For example, in the equation:
+\[
+x + 3 = 7
+\]
+the variable \( x \) represents a number. Solving the equation means finding the value of \( x \) that makes the equation true in this case, \( x = 4 \).
+
+\textbf{Variables} are fundamental in algebra because they allow us to generalize problems and create formulas.
+\subsection{Coefficients}
+
+A \textbf{coefficient} is the numerical factor multiplied by a variable in an algebraic expression.
+
+For example, in the term:
+\[
+5x
+\]
+the number \( 5 \) is the coefficient of the variable \( x \). It tells us how many times \( x \) is being counted or scaled.
+
+More examples:
+\begin{itemize}
+  \item In \( -3y \), the coefficient is \( -3 \)
+  \item In \( \frac{1}{2}a \), the coefficient is \( \frac{1}{2} \)
+  \item In \( z \), the coefficient is implicitly \( 1 \), since \( z = 1 \cdot z \)
+\end{itemize}
+
+Coefficients help determine the slope of a line in linear equations and play a major role in simplifying and solving expressions.
+\section{Equations vs. Expressions}
+
+Understanding the difference between expressions and equations is essential in algebra.
+\subsection{Expressions}
+
+An \textbf{expression} is a combination of numbers, variables, and operations (like addition or multiplication), but it does \textbf{not} contain an equals sign.
+
+Examples:
+\[
+2x + 5,\quad 3a^2 - 4,\quad \frac{1}{2}y
 \]
 
-% ------------------------
-\section{Linear Equations}
+Expressions represent a value, but not a complete statement to solve. You can simplify or evaluate expressions, but you cannot "solve" them unless they're part of an equation.
 
-\subsection{Solving One-Step Equations}
+\subsection{Equations}
 
-Solve:
+An \textbf{equation} is a mathematical statement that two expressions are equal. It always contains an equals sign (\( = \)) and usually involves finding the value of a variable that makes the equation true.
+
+Examples:
 \[
-x - 5 = 9 \quad \Rightarrow \quad x = 14
+2x + 5 = 11, \quad a^2 = 16, \quad \frac{1}{2}y = 3
 \]
 
-% ------------------------
-% Continue building sections here...
+Solving an \textbf{equation} means determining the value(s) of the variable(s) that make both sides equal.
+
+\subsection*{Summary Table}
+
+\begin{center}
+\begin{tabular}{|c|c|}
+\hline
+\textbf{Expression} & \textbf{Equation} \\
+\hline
+No equals sign & Has an equals sign \\
+Represents a value & Represents a relationship \\
+Can be simplified or evaluated & Can be solved \\
+Example: \( 3x + 2 \) & Example: \( 3x + 2 = 11 \) \\
+\hline
+\end{tabular}
+\end{center}
+
+\section{The Associative Property}
+
+The \textbf{associative property} refers to the grouping of terms using parentheses in addition or multiplication. It tells us that the way numbers are grouped does not change the result — only the order of operations inside parentheses changes, not the outcome.
+
+\subsection{Associative Property of Addition}
+
+The associative property of addition states:
+
+\[
+(a + b) + c = a + (b + c)
+\]
+
+You can add numbers in any grouping, and the sum will stay the same.
+
+\textbf{Example:}
+\[
+(2 + 3) + 4 = 5 + 4 = 9
+\]
+\[
+2 + (3 + 4) = 2 + 7 = 9
+\]
+
+So, \( (2 + 3) + 4 = 2 + (3 + 4) \).
+
+\subsection{Associative Property of Multiplication}
+
+The associative property of multiplication states:
+
+\[
+(a \times b) \times c = a \times (b \times c)
+\]
+
+You can multiply in any grouping, and the product remains unchanged.
+
+\textbf{Example:}
+\[
+(2 \times 3) \times 4 = 6 \times 4 = 24
+\]
+\[
+2 \times (3 \times 4) = 2 \times 12 = 24
+\]
+
+So, \( (2 \times 3) \times 4 = 2 \times (3 \times 4) \).
+
+\section{The Commutative Property}
+
+The \textbf{commutative property} describes how the order of numbers does not affect the result when adding or multiplying. It applies only to \textbf{addition and multiplication} — not subtraction or division.
+
+\subsection{Commutative Property of Addition}
+
+The commutative property of addition states:
+
+\[
+a + b = b + a
+\]
+
+You can change the order of the numbers being added without changing the sum.
+
+\textbf{Example:}
+\[
+4 + 7 = 11 \quad \text{and} \quad 7 + 4 = 11
+\]
+
+So, \( 4 + 7 = 7 + 4 \)
+
+\subsection{Commutative Property of Multiplication}
+
+The commutative property of multiplication states:
+
+\[
+a \times b = b \times a
+\]
+
+You can change the order of the numbers being multiplied without changing the product.
+
+\textbf{Example:}
+\[
+6 \times 5 = 30 \quad \text{and} \quad 5 \times 6 = 30
+\]
+
+So, \( 6 \times 5 = 5 \times 6 \)
+\section{The Distributive Property}
+
+The \textbf{distributive property} connects multiplication and addition (or subtraction). It states that multiplying a number by a sum is the same as multiplying it by each term separately and then adding the results.
+
+\[
+a(b + c) = ab + ac
+\]
+\[
+a(b - c) = ab - ac
+\]
+
+This property is especially useful for simplifying expressions and solving equations.
+
+\subsection*{Examples}
+
+\textbf{Example 1:}
+\[
+3(4 + 5) = 3 \times 9 = 27
+\]
+\[
+3 \times 4 + 3 \times 5 = 12 + 15 = 27
+\]
+
+\textbf{Example 2 (with variables):}
+\[
+x(2 + y) = x \cdot 2 + x \cdot y = 2x + xy
+\]
+
+\textbf{Example 3 (with subtraction):}
+\[
+5(a - 3) = 5a - 15
+\]
+
+\subsection*{Why It's Important}
+
+The distributive property is essential when:
+\begin{itemize}
+  \item Expanding expressions like \( 2(x + 3) \)
+  \item Factoring expressions like \( 3x + 6 \)
+  \item Solving equations efficiently
+\end{itemize}
+\section{Like Terms}
+
+\textbf{Like terms} are terms that have the same variable(s) raised to the same power(s). Only the numerical coefficients can be different. Like terms can be combined using addition or subtraction.
+
+\subsection{Addition and Subtraction of Like Terms}
+
+To combine like terms, simply add or subtract their coefficients.
+
+\textbf{Example 1:}
+\[
+3x + 5x = (3 + 5)x = 8x
+\]
+
+\textbf{Example 2:}
+\[
+7a^2 - 2a^2 = 5a^2
+\]
+
+\textbf{Note:} You \textit{cannot} combine terms that are not like terms.
+
+\[
+4x + 2x^2 \neq 6x^2
+\quad \text{(not like terms)}
+\]
+
+\subsection{Multiplication and Division of Like Terms}
+
+When multiplying or dividing like terms, you combine coefficients and apply exponent rules to the variables.
+
+\textbf{Multiplication Example:}
+\[
+(3x)(2x) = 6x^2
+\]
+
+\[
+(4a^2)(-2a^3) = -8a^5
+\]
+
+\textbf{Division Example:}
+\[
+\frac{10x^3}{2x} = 5x^2
+\]
+
+\[
+\frac{-6y^4}{3y^2} = -2y^2
+\]
+
+\subsection*{Key Idea}
+
+\begin{itemize}
+  \item \textbf{Addition/Subtraction:} Combine only like terms (same variables and exponents)
+  \item \textbf{Multiplication/Division:} Use exponent rules, even for unlike terms
+\end{itemize}
 
 \end{document}
