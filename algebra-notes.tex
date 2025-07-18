@@ -10,6 +10,7 @@
 \usepackage{fancyhdr}
 \usepackage{color}
 \usepackage{hyperref}
+\usepackage[most]{tcolorbox}
 \usepackage{titlesec}
 \usepackage{cancel} % For canceling terms
 \usepackage{tikz}   % Diagrams and graphs
@@ -43,7 +44,7 @@
 % ------------------------
 \section{Introduction}
 
-This document contains concise notes, worked examples, and practice problems to help rebuild my algebra foundation.
+This document contains concise notes and worked examples.
 
 % ------------------------
 \section{Algebra Basics}
@@ -215,47 +216,6 @@ You can change the order of the numbers being multiplied without changing the pr
 \]
 
 So, \( 6 \times 5 = 5 \times 6 \)
-\section{The Distributive Property}
-
-The \textbf{distributive property} connects multiplication and addition (or subtraction). It states that multiplying a number by a sum is the same as multiplying it by each term separately and then adding the results.
-
-\[
-a(b + c) = ab + ac
-\]
-\[
-a(b - c) = ab - ac
-\]
-
-This property is especially useful for simplifying expressions and solving equations.
-
-\subsection*{Examples}
-
-\textbf{Example 1:}
-\[
-3(4 + 5) = 3 \times 9 = 27
-\]
-\[
-3 \times 4 + 3 \times 5 = 12 + 15 = 27
-\]
-
-\textbf{Example 2 (with variables):}
-\[
-x(2 + y) = x \cdot 2 + x \cdot y = 2x + xy
-\]
-
-\textbf{Example 3 (with subtraction):}
-\[
-5(a - 3) = 5a - 15
-\]
-
-\subsection*{Why It's Important}
-
-The distributive property is essential when:
-\begin{itemize}
-  \item Expanding expressions like \( 2(x + 3) \)
-  \item Factoring expressions like \( 3x + 6 \)
-  \item Solving equations efficiently
-\end{itemize}
 \section{Like Terms}
 
 \textbf{Like terms} are terms that have the same variable(s) raised to the same power(s). Only the numerical coefficients can be different. Like terms can be combined using addition or subtraction.
@@ -309,5 +269,290 @@ When multiplying or dividing like terms, you combine coefficients and apply expo
   \item \textbf{Addition/Subtraction:} Combine only like terms (same variables and exponents)
   \item \textbf{Multiplication/Division:} Use exponent rules, even for unlike terms
 \end{itemize}
+\section{The Distributive Property}
+
+The \textbf{distributive property} connects multiplication and addition or subtraction. It allows you to multiply a number or variable by each term inside parentheses.
+
+\[
+a(b + c) = ab + ac
+\quad \text{and} \quad
+a(b - c) = ab - ac
+\]
+
+This property is used frequently in algebra to expand expressions and solve equations.
+
+\subsection*{Examples}
+
+\textbf{Example 1 (with numbers):}
+\[
+3(4 + 5) = 3 \cdot 9 = 27
+\]
+\[
+3 \cdot 4 + 3 \cdot 5 = 12 + 15 = 27
+\]
+
+\textbf{Example 2 (with variables):}
+\[
+x(2 + y) = 2x + xy
+\]
+
+\textbf{Example 3 (with subtraction):}
+\[
+5(a - 3) = 5a - 15
+\]
+
+\subsection*{Why It Matters}
+
+The distributive property helps you:
+\begin{itemize}
+  \item Expand expressions like \( 2(x + 3) \)
+  \item Simplify algebraic expressions
+  \item Solve equations more efficiently
+  \item Factor expressions in reverse
+\end{itemize}
+\subsection*{More on the Distributive Property}
+
+The distributive property is also essential when working with variables, negative numbers, and factoring expressions.
+
+\subsubsection*{Example with Variables and Negatives}
+
+\[
+-2(x - 4) = -2 \cdot x + (-2) \cdot (-4) = -2x + 8
+\]
+
+Notice:
+\begin{itemize}
+  \item The negative sign distributes to both terms
+  \item Be careful with signs: \( -2 \cdot -4 = +8 \)
+\end{itemize}
+
+\subsubsection*{Common Mistake to Avoid}
+
+Incorrect:
+\[
+3(x + 2) = 3x + 2 \quad \textcolor{red}{\textbf{✗}} \quad \text{(Only distributed to } x \text{)}
+\]
+
+Correct:
+\[
+3(x + 2) = 3x + 6 \quad \textcolor{green}{\textbf{✓}}
+\]
+
+Always distribute to \textit{every} term inside the parentheses.
+
+\subsubsection*{Using the Distributive Property to Factor}
+
+The distributive property also works \textit{in reverse}, which is how we factor expressions.
+
+\[
+6x + 12 = 6(x + 2)
+\]
+
+Here, we pulled out the common factor of 6 — essentially undoing the distribution.
+
+Factoring is the process of writing an expression as a product using the distributive property in reverse.
+
+\textbf{Tip:} Look for a greatest common factor (GCF) before factoring!
+\section{Polynomials}
+
+A \textbf{polynomial} is an expression made up of variables, constants, and exponents, combined using addition, subtraction, and multiplication — but no variables in the denominator or under radicals.
+
+\subsection*{Examples of Polynomials}
+
+\[
+3x^2 + 2x - 5, \quad x^3 - 4x + 7, \quad 2a^2b + 3ab^2
+\]
+
+---
+
+\subsection{Addition and Subtraction of Polynomials}
+
+To add or subtract polynomials:
+\begin{itemize}
+  \item Combine like terms (same variables raised to the same powers)
+  \item Add/subtract the coefficients of like terms
+\end{itemize}
+
+\textbf{Example 1 — Addition:}
+\[
+(2x^2 + 3x + 1) + (x^2 + 4x - 5)
+\]
+\[
+= (2x^2 + x^2) + (3x + 4x) + (1 - 5) = 3x^2 + 7x - 4
+\]
+
+\textbf{Example 2 — Subtraction:}
+\[
+(5x^2 - 2x + 6) - (3x^2 + x - 4)
+\]
+\[
+= (5x^2 - 3x^2) + (-2x - x) + (6 + 4) = 2x^2 - 3x + 10
+\]
+
+---
+
+\subsection{Multiplication of Polynomials}
+
+To multiply polynomials:
+\begin{itemize}
+  \item Use the distributive property (FOIL for binomials)
+  \item Multiply each term in the first polynomial by each term in the second
+  \item Combine like terms
+\end{itemize}
+
+\textbf{Example:}
+\[
+(x + 2)(x + 5)
+= x(x + 5) + 2(x + 5)
+= x^2 + 5x + 2x + 10
+= x^2 + 7x + 10
+\]
+
+\textbf{Another Example:}
+\[
+(2x - 3)(x^2 + x - 4)
+= 2x(x^2 + x - 4) - 3(x^2 + x - 4)
+\]
+\[
+= 2x^3 + 2x^2 - 8x - 3x^2 - 3x + 12
+= 2x^3 - x^2 - 11x + 12
+\]
+
+---
+
+\subsection{Division of Polynomials (Intro)}
+
+Dividing polynomials can be done using:
+\begin{itemize}
+  \item Long division
+  \item Synthetic division (when dividing by linear terms like \( x - a \))
+\end{itemize}
+
+\textbf{Basic Example:}
+\[
+\frac{6x^2 + 9x}{3x} = \frac{6x^2}{3x} + \frac{9x}{3x} = 2x + 3
+\]
+
+\textbf{Note:} More complex division techniques will be covered in a later section.
+\begin{tcolorbox}[title=Polynomial Operations Summary, colback=blue!5!white, colframe=blue!75!black, sharp corners=southwest, boxrule=0.8pt]
+
+\textbf{Polynomials} are expressions with variables and constants using only addition, subtraction, and multiplication (no variables in denominators or exponents).
+
+\vspace{1ex}
+\textbf{Addition/Subtraction:}
+\begin{itemize}
+  \item Combine like terms (same variable and exponent)
+  \item Only coefficients are added or subtracted
+\end{itemize}
+
+\textbf{Multiplication:}
+\begin{itemize}
+  \item Use the distributive property or FOIL
+  \item Multiply each term in one polynomial by each term in the other
+  \item Combine like terms
+\end{itemize}
+
+\textbf{Division:}
+\begin{itemize}
+  \item Simplify each term if possible
+  \item For complex division, use long division or synthetic division (covered later)
+\end{itemize}
+
+\end{tcolorbox}
+
+\subsection{Long Division}
+
+Long division is a step-by-step method for dividing numbers or algebraic expressions.
+
+\begin{itemize}
+  \item \textbf{Dividend:} the number or expression being divided
+  \item \textbf{Divisor:} the number or expression you are dividing by
+  \item \textbf{Quotient:} the result of the division (goes on top)
+\end{itemize}
+
+---
+
+\subsubsection*{Example 1: Long Division with Whole Numbers}
+
+Divide:
+\[
+125 \div 5
+\]
+
+Here:
+\begin{itemize}
+  \item Dividend = 125
+  \item Divisor = 5
+  \item Quotient = 25
+\end{itemize}
+
+\[
+\begin{array}{r|l}
+5\, &\,125 \\
+\hline
+& 25
+\end{array}
+\]
+
+Steps:
+\begin{enumerate}
+  \item Divide 12 by 5 → 2 (since \( 5 \times 2 = 10 \))
+  \item Subtract: \( 12 - 10 = 2 \), bring down the 5 → 25
+  \item Divide 25 by 5 → 5 (since \( 5 \times 5 = 25 \))
+  \item Final result: \( 25 \)
+\end{enumerate}
+
+---
+
+\subsubsection*{Example 2: Polynomial Long Division}
+
+Divide:
+\[
+\frac{x^2 + 3x + 2}{x + 1}
+\]
+
+Here:
+\begin{itemize}
+  \item Dividend = \( x^2 + 3x + 2 \)
+  \item Divisor = \( x + 1 \)
+  \item Quotient = the expression that results from division
+\end{itemize}
+
+\textbf{Step 1:} Divide leading terms:
+\[
+x^2 \div x = x
+\]
+
+\textbf{Step 2:} Multiply and subtract:
+\[
+(x^2 + 3x + 2) - (x)(x + 1) = x^2 + 3x + 2 - (x^2 + x) = 2x + 2
+\]
+
+\textbf{Step 3:} Divide leading terms again:
+\[
+2x \div x = 2
+\]
+
+\textbf{Step 4:} Multiply and subtract:
+\[
+(2x + 2) - 2(x + 1) = 2x + 2 - (2x + 2) = 0
+\]
+
+So the division is exact.
+
+\textbf{Final Answer:}
+\[
+\frac{x^2 + 3x + 2}{x + 1} = x + 2
+\]
+
+---
+
+\begin{tcolorbox}[title=Terminology Review, colback=blue!5!white, colframe=blue!75!black]
+\begin{itemize}
+  \item \textbf{Dividend:} what you're dividing \quad (e.g., \( x^2 + 3x + 2 \))
+  \item \textbf{Divisor:} what you're dividing by \quad (e.g., \( x + 1 \))
+  \item \textbf{Quotient:} result of the division \quad (e.g., \( x + 2 \))
+\end{itemize}
+\end{tcolorbox}
 
 \end{document}
