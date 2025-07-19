@@ -1,0 +1,22 @@
+.DS_Store
+.idea
+*.log
+tmp/
+
+
+# AUCTeX cache directory
+.auctex-auto/
+
+# LaTeX auxiliary files
+*.aux
+*.log
+*.out
+*.toc
+*.synctex.gz
+*.lof
+*.lot
+*.fls
+*.fdb_latexmk
+*.nav
+*.snm
+*.vrb
