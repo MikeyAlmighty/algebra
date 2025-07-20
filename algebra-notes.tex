@@ -610,5 +610,158 @@ Here:
   \item Use standard subtraction to cancel each step before proceeding
 \end{itemize}
 \end{tcolorbox}
+\section{Quadratic Polynomials}
+
+A \textbf{quadratic polynomial} is a polynomial of degree 2, meaning the highest power of the variable is 2.
+
+\subsection*{General Form}
+
+\[
+ax^2 + bx + c
+\]
+where:
+\begin{itemize}
+  \item \( a, b, c \) are real numbers and \( a \ne 0 \)
+  \item \( a \) is the \textbf{leading coefficient}
+  \item \( b \) is the \textbf{linear coefficient}
+  \item \( c \) is the \textbf{constant term}
+\end{itemize}
+
+---
+
+\subsection*{Examples}
+\begin{itemize}
+  \item \( x^2 + 5x + 6 \)
+  \item \( 3x^2 - 2x + 1 \)
+  \item \( -x^2 + 4 \)
+\end{itemize}
+
+---
+
+\subsection*{Graphing Quadratics}
+
+Quadratic functions graph as a \textbf{parabola}. The shape of the parabola depends on the sign of \( a \):
+\begin{itemize}
+  \item If \( a > 0 \): the parabola opens \textbf{upward} (like a smile)
+  \item If \( a < 0 \): the parabola opens \textbf{downward} (like a frown)
+\end{itemize}
+
+The highest or lowest point on the parabola is called the \textbf{vertex}.
+
+---
+
+\subsection*{Solving Quadratic Equations}
+
+Quadratics can be solved using several methods:
+\begin{itemize}
+  \item \textbf{Factoring}
+  \item \textbf{Completing the square}
+  \item \textbf{Quadratic formula:}
+  \[
+  x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
+  \]
+\end{itemize}
+
+---
+
+\begin{tcolorbox}[title=Quick Facts About Quadratics, colback=yellow!5!white, colframe=yellow!80!black]
+\begin{itemize}
+  \item Degree = 2 (because of \( x^2 \))
+  \item Graph = parabola
+  \item May have 0, 1, or 2 real roots depending on the discriminant \( b^2 - 4ac \)
+  \item Coefficients tell you the shape and position of the graph
+\end{itemize}
+\end{tcolorbox}
+\subsection{Factoring a Quadratic Polynomial}
+
+Factoring is one of the most common ways to solve a quadratic equation when it can be written as a product of two binomials.
+
+---
+
+\subsubsection*{Example: Factor \( x^2 + 5x + 6 \)}
+
+\textbf{Step 1:} Look for two numbers that multiply to \( 6 \) (the constant term) and add to \( 5 \) (the linear coefficient).
+
+\[
+\text{Factors of 6: } (1,6),\ (2,3)
+\]
+\[
+2 + 3 = 5 \quad \Rightarrow \quad \text{Use } 2 \text{ and } 3
+\]
+
+\textbf{Step 2:} Write the factored form:
+\[
+x^2 + 5x + 6 = (x + 2)(x + 3)
+\]
+
+\textbf{Step 3:} Check by expanding:
+\[
+(x + 2)(x + 3) = x^2 + 3x + 2x + 6 = x^2 + 5x + 6
+\]
+
+✔️ Confirmed!
+
+---
+
+\begin{tcolorbox}[title=Factoring Tips, colback=green!5!white, colframe=green!70!black]
+\begin{itemize}
+  \item Always look for a greatest common factor (GCF) first
+  \item Use a factoring method like:
+  \begin{itemize}
+    \item Simple guess-and-check
+    \item Box or area method
+    \item AC method (for trinomials where \( a \ne 1 \))
+  \end{itemize}
+  \item Always double-check by expanding!
+\end{itemize}
+\end{tcolorbox}
+\subsection{Difference of Squares}
+
+The \textbf{difference of squares} is a special factoring pattern that applies when a binomial consists of two perfect squares being subtracted.
+
+\[
+a^2 - b^2 = (a - b)(a + b)
+\]
+
+This works because when expanded:
+\[
+(a - b)(a + b) = a^2 + ab - ab - b^2 = a^2 - b^2
+\]
+
+---
+
+\subsubsection*{Examples}
+
+\begin{itemize}
+  \item \( x^2 - 9 = (x - 3)(x + 3) \)
+  \item \( 4x^2 - 25 = (2x - 5)(2x + 5) \)
+  \item \( 49y^2 - 1 = (7y - 1)(7y + 1) \)
+  \item \(x^4 - 16 = (x^2)^2 - 4^2 = (x^2 - 4)(x^2 + 4) = (x - 2)(x + 2)(x^2 + 4) \)
+
+
+\end{itemize}
+
+---
+
+\textbf{Important Notes:}
+\begin{itemize}
+  \item Works only with \textbf{subtraction}, not addition
+  \item Both terms must be perfect squares
+  \item Often used to simplify expressions or solve equations
+\end{itemize}
+
+---
+
+\begin{tcolorbox}[title=Difference of Squares Summary, colback=red!5!white, colframe=red!75!black]
+\[
+a^2 - b^2 = (a - b)(a + b)
+\]
+
+\textbf{Examples:}
+\begin{itemize}
+  \item \( x^2 - 16 = (x - 4)(x + 4) \)
+  \item \( 9a^2 - 1 = (3a - 1)(3a + 1) \)
+\end{itemize}
+\end{tcolorbox}
 
 \end{document}
