@@ -554,5 +554,61 @@ So the division is exact.
   \item \textbf{Quotient:} result of the division \quad (e.g., \( x + 2 \))
 \end{itemize}
 \end{tcolorbox}
+\subsection{Multivariable Polynomial Long Division}
+
+Polynomial long division can also be performed with expressions that include more than one variable. The process is similar, but care must be taken to match like terms correctly and order terms consistently by degree.
+
+---
+
+\subsubsection*{Example: Divide \( 6x^2y + 9xy^2 \) by \( 3xy \)}
+
+Here:
+\begin{itemize}
+  \item Dividend: \( 6x^2y + 9xy^2 \)
+  \item Divisor: \( 3xy \)
+\end{itemize}
+
+\textbf{Step 1: Divide the first term of the dividend by the first term of the divisor}
+\[
+\frac{6x^2y}{3xy} = 2x
+\]
+
+\textbf{Step 2: Multiply the entire divisor by \( 2x \)}
+\[
+2x \cdot (3xy) = 6x^2y
+\]
+
+\textbf{Step 3: Subtract}
+\[
+(6x^2y + 9xy^2) - 6x^2y = 9xy^2
+\]
+
+\textbf{Step 4: Divide next term}
+\[
+\frac{9xy^2}{3xy} = 3y
+\]
+
+\textbf{Step 5: Multiply and subtract}
+\[
+3y \cdot (3xy) = 9xy^2
+\]
+\[
+9xy^2 - 9xy^2 = 0
+\]
+
+\textbf{Final Answer:}
+\[
+\frac{6x^2y + 9xy^2}{3xy} = 2x + 3y
+\]
+
+---
+
+\begin{tcolorbox}[title=Tips for Multivariable Long Division, colback=yellow!5!white, colframe=yellow!80!black]
+\begin{itemize}
+  \item Organize terms in descending order of one variable (typically \( x \))
+  \item Divide one term at a time, matching both variable parts and coefficients
+  \item Use standard subtraction to cancel each step before proceeding
+\end{itemize}
+\end{tcolorbox}
 
 \end{document}
