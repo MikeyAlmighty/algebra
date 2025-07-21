@@ -1037,5 +1037,70 @@ x = \frac{2 + 4}{2} = 3 \quad \text{and} \quad x = \frac{2 - 4}{2} = -1
 
 \textbf{Conclusion:}
 The quadratic formula is a universal method for solving any quadratic equation, and the discriminant tells you what kind of solutions to expect.
+\section{The Cartesian Plane}
+
+The Cartesian Plane is a two-dimensional coordinate system defined by a horizontal number line called the \textbf{x-axis}, and a vertical number line called the \textbf{y-axis}. These axes intersect at the \textbf{origin}, denoted as \( (0, 0) \).
+
+Each point on the plane is represented by an ordered pair \( (x, y) \), where:
+\begin{itemize}
+  \item \( x \) is the horizontal value (left/right),
+  \item \( y \) is the vertical value (up/down).
+\end{itemize}
+
+\begin{center}
+\begin{tikzpicture}[scale=0.8]
+  \draw[very thin,color=gray!30] (-5.5,-5.5) grid (5.5,5.5);
+  \draw[->,thick] (-6,0) -- (6,0) node[right] {\( x \)};
+  \draw[->,thick] (0,-6) -- (0,6) node[above] {\( y \)};
+  \node at (0,0) [circle,fill=black,inner sep=1.5pt]{};
+  \node[below left] at (0,0) {\( (0, 0) \)};
+  \foreach \x in {-5,-4,...,5} {
+    \draw (\x,0.1) -- (\x,-0.1) node[below] {\tiny \x};
+  }
+  \foreach \y in {-5,-4,...,5} {
+    \draw (0.1,\y) -- (-0.1,\y) node[left] {\tiny \y};
+  }
+  \node[circle,fill=blue,inner sep=2pt,label={right:\( (3,2) \)}] at (3,2) {};
+  \node[circle,fill=red,inner sep=2pt,label={left:\( (-2,-4) \)}] at (-2,-4) {};
+\end{tikzpicture}
+\end{center}
+
+\begin{tcolorbox}[colback=blue!5!white, colframe=blue!75!black, title=Summary]
+\begin{itemize}
+  \item The Cartesian Plane has two axes: \( x \)-axis (horizontal), \( y \)-axis (vertical).
+  \item The point where they meet is the origin \( (0, 0) \).
+  \item Each point is identified by an ordered pair (Called a coordinate) \( (x, y) \).
+\end{itemize}
+\end{tcolorbox}
+\subsection{The Four Quadrants}
+
+The Cartesian Plane is divided into four regions called \textbf{quadrants}. These are numbered in a counterclockwise direction starting from the upper-right:
+
+\begin{itemize}
+  \item \textbf{Quadrant I}: \( (+x, +y) \)
+  \item \textbf{Quadrant II}: \( (-x, +y) \)
+  \item \textbf{Quadrant III}: \( (-x, -y) \)
+  \item \textbf{Quadrant IV}: \( (+x, -y) \)
+\end{itemize}
+
+\begin{center}
+\begin{tikzpicture}[scale=0.8]
+  \draw[very thin,color=gray!30] (-5.5,-5.5) grid (5.5,5.5);
+  \draw[->,thick] (-6,0) -- (6,0) node[right] {\( x \)};
+  \draw[->,thick] (0,-6) -- (0,6) node[above] {\( y \)};
+  \node at (0,0) [circle,fill=black,inner sep=1.5pt]{};
+  \node at (3,3) {\textbf{I}};
+  \node at (-3,3) {\textbf{II}};
+  \node at (-3,-3) {\textbf{III}};
+  \node at (3,-3) {\textbf{IV}};
+\end{tikzpicture}
+\end{center}
+
+\begin{tcolorbox}[colback=green!5!white, colframe=green!50!black, title=Summary of Quadrants]
+\begin{itemize}
+  \item Points in each quadrant have characteristic signs for \(x\) and \(y\).
+  \item The quadrants are labeled I through IV, moving counterclockwise.
+\end{itemize}
+\end{tcolorbox}
 
 \end{document}
