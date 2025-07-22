@@ -1102,5 +1102,196 @@ The Cartesian Plane is divided into four regions called \textbf{quadrants}. Thes
   \item The quadrants are labeled I through IV, moving counterclockwise.
 \end{itemize}
 \end{tcolorbox}
+\subsection{Slope of a Line}
+
+The \textbf{slope} of a line is a measure of its steepness. It tells us how much the \( y \)-value changes for a given change in the \( x \)-value.
+
+Given two points on a line, \( (x_1, y_1) \) and \( (x_2, y_2) \), the slope \( m \) is calculated using the formula:
+
+\[
+m = \frac{y_2 - y_1}{x_2 - x_1}
+\]
+
+This is also known as “rise over run”:
+\begin{itemize}
+  \item \textbf{Rise}: the vertical change \( (y_2 - y_1) \)
+  \item \textbf{Run}: the horizontal change \( (x_2 - x_1) \)
+\end{itemize}
+
+\begin{center}
+\begin{tikzpicture}[scale=0.9]
+  \draw[very thin,color=gray!30] (-1.5,-1.5) grid (6.5,4.5);
+  \draw[->,thick] (-1.5,0) -- (6.5,0) node[right] {\( x \)};
+  \draw[->,thick] (0,-1.5) -- (0,4.5) node[above] {\( y \)};
+  \coordinate (A) at (1,1);
+  \coordinate (B) at (5,3);
+  \draw[thick,blue] (A) -- (B);
+  \filldraw[black] (A) circle (2pt) node[below left] {\( (x_1, y_1) \)};
+  \filldraw[black] (B) circle (2pt) node[above right] {\( (x_2, y_2) \)};
+  \draw[dashed] (A) -- ++(4,0) node[midway,below] {\small run};
+  \draw[dashed] (B) -- ++(-4,0);
+  \draw[dashed] (A) -- ++(0,2) node[midway,left] {\small rise};
+  \draw[dashed] (B) -- ++(0,-2);
+\end{tikzpicture}
+\end{center}
+
+\begin{tcolorbox}[colback=yellow!5!white, colframe=yellow!80!black, title=Summary: Slope of a Line]
+\begin{itemize}
+  \item Slope measures how steep a line is.
+  \item Use \( m = \dfrac{y_2 - y_1}{x_2 - x_1} \) to calculate it.
+  \item A positive slope rises left to right; negative slope falls.
+\end{itemize}
+\end{tcolorbox}
+
+\subsection{Point-Slope Form of a Line}
+
+If you know the slope \( m \) of a line and a point \( (x_1, y_1) \) it passes through, you can write the line's equation using the \textbf{point-slope form}:
+
+\[
+y - y_1 = m(x - x_1)
+\]
+
+\textbf{Requirements:}
+\begin{itemize}
+  \item A single point \( (x_1, y_1) \)
+  \item The slope \( m \)
+\end{itemize}
+
+\textbf{Example:}
+Given the point \( (2, 3) \) and slope \( m = 4 \), the equation becomes:
+
+\[
+y - 3 = 4(x - 2)
+\]
+
+This can be left in point-slope form or simplified to slope-intercept form.
+
+\begin{tcolorbox}[colback=cyan!5!white, colframe=cyan!80!black, title=Point-Slope Summary]
+\begin{itemize}
+  \item Use when you know one point and the slope.
+  \item Formula: \( y - y_1 = m(x - x_1) \)
+\end{itemize}
+\end{tcolorbox}
+
+\subsection{Slope-Intercept Form of a Line}
+
+The \textbf{slope-intercept form} expresses a linear equation as:
+
+\[
+y = mx + b
+\]
+
+Where:
+\begin{itemize}
+  \item \( m \) is the slope of the line.
+  \item \( b \) is the \textbf{y-intercept} — the value of \( y \) when \( x = 0 \).
+\end{itemize}
+
+\textbf{Requirements:}
+\begin{itemize}
+  \item Slope \( m \)
+  \item Y-intercept \( b \)
+\end{itemize}
+
+\textbf{Example:}
+If a line has slope \( m = -2 \) and y-intercept \( b = 5 \), the equation is:
+
+\[
+y = -2x + 5
+\]
+
+This form is especially useful for graphing.
+
+\begin{tcolorbox}[colback=orange!5!white, colframe=orange!80!black, title=Slope-Intercept Summary]
+\begin{itemize}
+  \item Use when slope and y-intercept are known.
+  \item Formula: \( y = mx + b \)
+  \item \( b \) tells you where the line crosses the \( y \)-axis.
+\end{itemize}
+\end{tcolorbox}
+\subsection{Converting Between Forms of a Linear Equation}
+
+Linear equations can be written in multiple forms. It’s often helpful to convert between them depending on the context (e.g., graphing, solving, or analyzing).
+
+\subsubsection*{1. Point-Slope to Slope-Intercept}
+
+Start with the point-slope form:
+\[
+y - y_1 = m(x - x_1)
+\]
+
+Distribute the slope and solve for \( y \) to convert to slope-intercept form:
+\[
+\begin{align*}
+y - y_1 &= m(x - x_1) \\
+y &= m(x - x_1) + y_1 \quad \text{(Slope-Intercept Form: \( y = mx + b \))}
+\end{align*}
+\]
+
+\textbf{Example:}
+Convert \( y - 2 = 3(x + 1) \) to slope-intercept form:
+\[
+\begin{align*}
+y - 2 &= 3(x + 1) \\
+y - 2 &= 3x + 3 \\
+y &= 3x + 5
+\end{align*}
+\]
+
+\subsubsection*{2. Two Points to Any Form}
+
+Given two points \( (x_1, y_1) \) and \( (x_2, y_2) \):
+\begin{enumerate}
+  \item Find the slope \( m = \dfrac{y_2 - y_1}{x_2 - x_1} \)
+  \item Use point-slope form with one point
+  \item Convert to slope-intercept form if needed
+\end{enumerate}
+
+\begin{tcolorbox}[colback=purple!5!white, colframe=purple!80!black, title=Summary: Converting Forms]
+\begin{itemize}
+  \item Point-slope to slope-intercept: distribute and solve for \( y \)
+  \item Two points → slope → point-slope → slope-intercept
+  \item Use the form that best suits the problem (graphing, solving, etc.)
+\end{itemize}
+\end{tcolorbox}
+\subsection{Undefined Slope and Vertical Lines}
+
+A \textbf{vertical line} goes straight up and down and has an \textbf{undefined slope}. This is because its run (change in \( x \)) is zero:
+
+\[
+m = \frac{y_2 - y_1}{x_2 - x_1}
+\]
+
+If \( x_2 = x_1 \), then the denominator becomes 0, and division by zero is undefined.
+
+\subsubsection*{Equation of a Vertical Line:}
+A vertical line through \( x = a \) is written as:
+
+\[
+x = a
+\]
+
+\begin{itemize}
+  \item It has an \textbf{undefined slope}.
+  \item It has an \textbf{x-intercept only} — it does not cross the \( y \)-axis.
+\end{itemize}
+
+\begin{center}
+\begin{tikzpicture}[scale=0.8]
+  \draw[very thin,color=gray!20] (-3.5,-4) grid (3.5,4);
+  \draw[->,thick] (-4,0) -- (4,0) node[right] {\( x \)};
+  \draw[->,thick] (0,-4.5) -- (0,4.5) node[above] {\( y \)};
+  \draw[thick,red] (2,-4) -- (2,4);
+  \node[red,right] at (2,3.5) {\( x = 2 \)};
+\end{tikzpicture}
+\end{center}
+
+\begin{tcolorbox}[colback=red!5!white, colframe=red!80!black, title=Important Notes on Vertical Lines]
+\begin{itemize}
+  \item Vertical lines have the form \( x = a \)
+  \item Their slope is undefined.
+  \item They do not cross the \( y \)-axis — no \( y \)-intercept exists.
+\end{itemize}
+\end{tcolorbox}
 
 \end{document}
