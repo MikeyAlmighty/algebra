@@ -5,6 +5,7 @@
 \usepackage[T1]{fontenc}
 \usepackage{amsmath, amssymb, amsfonts}
 \usepackage{geometry}
+\usepackage{amssymb}
 \usepackage{graphicx}
 \usepackage{enumitem}
 \usepackage{fancyhdr}
@@ -699,7 +700,7 @@ x^2 + 5x + 6 = (x + 2)(x + 3)
 (x + 2)(x + 3) = x^2 + 3x + 2x + 6 = x^2 + 5x + 6
 \]
 
-✔️ Confirmed!
+\checkmark Confirmed!
 
 ---
 
@@ -1221,22 +1222,18 @@ y - y_1 = m(x - x_1)
 \]
 
 Distribute the slope and solve for \( y \) to convert to slope-intercept form:
-\[
 \begin{align*}
 y - y_1 &= m(x - x_1) \\
 y &= m(x - x_1) + y_1 \quad \text{(Slope-Intercept Form: \( y = mx + b \))}
 \end{align*}
-\]
 
 \textbf{Example:}
 Convert \( y - 2 = 3(x + 1) \) to slope-intercept form:
-\[
 \begin{align*}
 y - 2 &= 3(x + 1) \\
 y - 2 &= 3x + 3 \\
 y &= 3x + 5
 \end{align*}
-\]
 
 \subsubsection*{2. Two Points to Any Form}
 
@@ -1264,7 +1261,7 @@ m = \frac{y_2 - y_1}{x_2 - x_1}
 
 If \( x_2 = x_1 \), then the denominator becomes 0, and division by zero is undefined.
 
-\subsubsection*{Equation of a Vertical Line:}
+\section*{Equation of a Vertical Line:}
 A vertical line through \( x = a \) is written as:
 
 \[
@@ -1293,5 +1290,238 @@ x = a
   \item They do not cross the \( y \)-axis — no \( y \)-intercept exists.
 \end{itemize}
 \end{tcolorbox}
+\section{Graphing Linear Equations}
+
+To graph a linear equation, such as:
+
+\[
+y = mx + b
+\]
+
+you can create a \textbf{table of values} by plugging in values for \( x \) and solving for \( y \). This gives you a set of points you can plot on the Cartesian plane.
+
+\subsection*{Steps to Graph a Line}
+\begin{enumerate}
+  \item Choose three \( x \)-values (commonly: \( -1, 0, 1 \))
+  \item Plug them into the equation to find corresponding \( y \)-values
+  \item Plot the points \( (x, y) \) on the graph
+  \item Draw a straight line through the points
+\end{enumerate}
+
+\subsection*{Example: Graph \( y = 2x + 1 \)}
+
+\textbf{Step 1: Create a table}
+
+\[
+\begin{array}{c|c}
+x & y = 2x + 1 \\
+\hline
+-1 & 2(-1) + 1 = -2 + 1 = -1 \\
+0 & 2(0) + 1 = 0 + 1 = 1 \\
+1 & 2(1) + 1 = 2 + 1 = 3 \\
+\end{array}
+\]
+
+\textbf{Step 2: Plot points}
+
+\[
+(-1, -1), \quad (0, 1), \quad (1, 3)
+\]
+
+\textbf{Step 3: Draw a straight line through the points}
+
+\begin{center}
+\begin{tikzpicture}[scale=0.8]
+  \draw[very thin,color=gray!20] (-3.5,-2.5) grid (3.5,4.5);
+  \draw[->,thick] (-4,0) -- (4,0) node[right] {\( x \)};
+  \draw[->,thick] (0,-3) -- (0,5) node[above] {\( y \)};
+  \foreach \x in {-3,-2,-1,1,2,3}
+    \draw[shift={(\x,0)},color=black] (0pt,-3pt) -- (0pt,3pt) node[below=5pt] {\x};
+  \foreach \y in {-2,-1,1,2,3,4}
+    \draw[shift={(0,\y)},color=black] (-3pt,0pt) -- (3pt,0pt) node[left=5pt] {\y};
+
+  \draw[thick,blue,->] (-1.5,-2) -- (2,4);
+  \filldraw[red] (-1,-1) circle (2pt) node[below left] {\scriptsize$(-1, -1)$};
+  \filldraw[red] (0,1) circle (2pt) node[above left] {\scriptsize$(0, 1)$};
+  \filldraw[red] (1,3) circle (2pt) node[above right] {\scriptsize$(1, 3)$};
+\end{tikzpicture}
+\end{center}
+
+\begin{tcolorbox}[colback=blue!5!white, colframe=blue!80!black, title=Graphing Summary]
+\begin{itemize}
+  \item Pick easy \( x \)-values: \( -1, 0, 1 \)
+  \item Solve for \( y \), make a table
+  \item Plot at least 3 points and draw the line
+\end{itemize}
+\end{tcolorbox}
+
+\section{Functions}
+
+A \textbf{function} is a relation where each input has exactly one output. The input is called the \textbf{independent variable} (usually \( x \)), and the output is the \textbf{dependent variable} (usually \( y \)).
+
+Formally, a function \( f \) from a set \( A \) (domain) to a set \( B \) (codomain) assigns each element \( x \in A \) to exactly one element \( y \in B \), written as:
+\[
+y = f(x)
+\]
+
+\bigskip
+
+\textbf{Key points about functions:}
+\begin{itemize}
+  \item For every \( x \), there is \emph{only one} corresponding \( y \).
+  \item The value of \( y \) depends on the choice of \( x \).
+  \item Functions can be represented by equations, tables, graphs, or mappings.
+\end{itemize}
+
+\bigskip
+
+\textbf{Example:} Consider the function
+\[
+f(x) = 2x + 3.
+\]
+To find the output when \( x = 4 \), substitute \( 4 \) into the function:
+\[
+f(4) = 2(4) + 3 = 8 + 3 = 11.
+\]
+So, the function value at \( x = 4 \) is 11.
+
+\bigskip
+
+\textbf{Function notation:}
+\[
+f(x) = y
+\]
+means "the value of the function \( f \) at input \( x \) is \( y \)."
+
+
+\subsection{Not a Function}
+
+An equation is \textbf{not a function} if one input has \emph{multiple outputs}. You can test this with the \textbf{vertical line test} — if a vertical line touches the graph in more than one place, it is \emph{not} a function.
+
+\textbf{Examples of equations that are not functions:}
+\begin{itemize}
+  \item \( x = 3 \) — a vertical line (undefined slope)
+  \item \( x^2 + y^2 = 1 \) — a circle (one \( x \) leads to two \( y \) values)
+\end{itemize}
+
+\begin{center}
+\begin{tikzpicture}[scale=0.8]
+  \draw[very thin,color=gray!20] (-3.5,-3.5) grid (3.5,3.5);
+  \draw[->,thick] (-4,0) -- (4,0) node[right] {\( x \)};
+  \draw[->,thick] (0,-4) -- (0,4) node[above] {\( y \)};
+
+  % Circle (Not a function)
+  \draw[thick,blue,domain=-0.999:0.999,smooth,variable=\x]
+  plot ({\x},{sqrt(1 - \x*\x)});
+\draw[thick,blue,domain=-0.999:0.999,smooth,variable=\x]
+  plot ({\x},{-sqrt(1 - \x*\x)});
+  \node[blue] at (2,1.8) {\scriptsize \( x^2 + y^2 = 1 \)};
+\end{tikzpicture}
+\end{center}
+
+\begin{tcolorbox}[colback=purple!5!white, colframe=purple!80!black, title=Function Summary]
+\begin{itemize}
+  \item A function gives exactly one output for each input.
+  \item It passes the \textbf{vertical line test}.
+  \item Not all equations are functions!
+\end{itemize}
+\end{tcolorbox}
+
+\subsection{Domain and Range}
+
+\textbf{Domain:} The set of all possible input values (\( x \)) for which the function is defined.
+
+\textbf{Range:} The set of all possible output values (\( y \)) that the function can produce.
+
+\bigskip
+
+\textbf{How to find Domain and Range:}
+
+\begin{itemize}
+  \item \textbf{Given a function \( f(x) \):}
+  Analyze the equation to determine which \( x \)-values are allowed. For example, avoid division by zero or square roots of negative numbers.
+
+  \medskip
+
+  \item \textbf{Given a set of points:}
+  The domain is the set of all \( x \)-coordinates, and the range is the set of all \( y \)-coordinates.
+
+  \medskip
+
+  \item \textbf{Given a graph:}
+  - The domain corresponds to all \( x \)-values covered by the graph (horizontally).
+  - The range corresponds to all \( y \)-values covered by the graph (vertically).
+\end{itemize}
+
+\bigskip
+
+\textbf{Example:}
+
+Consider the function
+\[
+f(x) = \sqrt{x - 2}.
+\]
+
+\begin{itemize}
+  \item \textbf{Domain:} Since the expression inside the square root must be non-negative,
+  \[
+  x - 2 \geq 0 \implies x \geq 2,
+  \]
+  so the domain is \( [2, \infty) \).
+
+  \item \textbf{Range:} The square root outputs non-negative values, so
+  \[
+  y \geq 0,
+  \]
+  and the range is \( [0, \infty) \).
+\end{itemize}
+
+\subsection{Is It a Function? (Testing Sets of Values)}
+
+To determine if a relation (a set of ordered pairs or an equation) is a function, use the following rule:
+
+\begin{tcolorbox}[colback=yellow!5!white, colframe=yellow!80!black, title=Function Test]
+A relation is a \textbf{function} if \emph{every input} (\( x \)-value) corresponds to \emph{exactly one output} (\( y \)-value).
+\end{tcolorbox}
+
+\textbf{Example 1 (Function — Set of Points):}
+\[
+\{ (1, 2), (2, 3), (3, 4) \}
+\]
+Each input is unique — this \textbf{is} a function.
+
+\medskip
+
+\textbf{Example 2 (Not a Function — Set of Points):}
+\[
+\{ (1, 2), (1, 3), (2, 4) \}
+\]
+The input \( 1 \) maps to two different outputs (\( 2 \) and \( 3 \)) — this is \textbf{not} a function.
+
+\bigskip
+
+\textbf{Example 3 (Algebraic Test):}
+
+Consider the equation:
+\[
+x^2 + y^2 = 1
+\]
+
+Solve for \( y \):
+\[
+y^2 = 1 - x^2 \Rightarrow y = \pm \sqrt{1 - x^2}
+\]
+
+This gives two \( y \)-values for a single \( x \)-value.
+\textbf{Conclusion:} This is \textbf{not} a function.
+
+\bigskip
+
+\textbf{Steps to check:}
+\begin{enumerate}
+  \item List all \( x \)-values or solve for \( y \).
+  \item If any \( x \)-value gives more than one \( y \), it's \textbf{not} a function.
+\end{enumerate}
+
 
 \end{document}
