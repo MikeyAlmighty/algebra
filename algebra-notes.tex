@@ -1992,4 +1992,91 @@ To graph a linear inequality in two variables (like \( y < 2x + 1 \)), follow th
 \end{itemize}
 \end{tcolorbox}
 
+\section{Absolute Value Equations}
+
+Absolute value equations involve expressions within absolute value bars, such as:
+
+\[
+|f(x)| = a
+\]
+
+\begin{tcolorbox}[colback=blue!5!white, colframe=blue!75!black, title=General Cases]
+\begin{itemize}
+  \item If \( a > 0 \), then there are \textbf{two solutions}: \( f(x) = a \) or \( f(x) = -a \)
+  \item If \( a = 0 \), then there is \textbf{one solution}: \( f(x) = 0 \)
+  \item If \( a < 0 \), then there are \textbf{no solutions}, because absolute value is never negative.
+\end{itemize}
+\end{tcolorbox}
+
+\subsubsection*{Example 1: \( |x - 4| = 6 \)}
+
+Solve:
+\begin{align*}
+x - 4 &= 6 \quad \text{or} \quad x - 4 = -6 \\
+x &= 10 \quad \text{or} \quad x = -2
+\end{align*}
+
+\subsubsection*{Example 2: \( |2x + 5| = 0 \)}
+
+\begin{align*}
+2x + 5 &= 0 \\
+x &= -\frac{5}{2}
+\end{align*}
+
+\subsubsection*{Example 3: \( |x + 3| = -7 \)}
+
+\textbf{No solution}, because the absolute value can’t equal a negative number.
+
+\begin{tcolorbox}[colback=purple!5!white, colframe=purple!80!black, title=Summary]
+\begin{itemize}
+  \item Isolate the absolute value expression.
+  \item Set up two equations: one positive, one negative.
+  \item Check for invalid cases (e.g., equals a negative number).
+\end{itemize}
+\end{tcolorbox}
+
+\subsection{Absolute Value Inequalities}
+
+Absolute value inequalities involve comparisons such as:
+
+\[
+|f(x)| < a \quad \text{or} \quad |f(x)| > a
+\]
+
+\begin{tcolorbox}[colback=orange!5!white, colframe=orange!75!black, title=Key Cases]
+\begin{enumerate}
+  \item \textbf{\( |f(x)| < \text{(negative)} \)} \\
+    \hspace{1em}No solution — absolute value is always non-negative.
+
+  \item \textbf{\( |f(x)| > \text{(negative)} \)} \\
+    \hspace{1em}All real numbers — all absolute values are greater than any negative number.
+
+  \item \textbf{\( |f(x)| < a \)} (where \( a > 0 \)) \\
+    \hspace{1em}\textbf{Conjunction:} Rewrite as a compound inequality:
+    \[
+    -a < f(x) < a
+    \]
+
+  \item \textbf{\( |f(x)| > a \)} (where \( a > 0 \)) \\
+    \hspace{1em}\textbf{Disjunction:} Split into two separate inequalities:
+    \[
+    f(x) < -a \quad \text{or} \quad f(x) > a
+    \]
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection*{Example 1: \( |x - 2| < 5 \)}
+
+\begin{align*}
+-5 &< x - 2 < 5 \\
+-3 &< x < 7
+\end{align*}
+
+\subsubsection*{Example 2: \( |x + 4| > 3 \)}
+
+\begin{align*}
+x + 4 &< -3 \quad \text{or} \quad x + 4 > 3 \\
+x &< -7 \quad \text{or} \quad x > -1
+\end{align*}
+
 \end{document}
