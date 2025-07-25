@@ -2079,4 +2079,145 @@ x + 4 &< -3 \quad \text{or} \quad x + 4 > 3 \\
 x &< -7 \quad \text{or} \quad x > -1
 \end{align*}
 
+\section{Solving Systems of Equations}
+
+A \textbf{system of equations} consists of two or more equations with the same set of variables. A solution to the system is the point(s) where the equations intersect — that is, the values that satisfy all equations simultaneously.
+
+There are three common methods to solve a system of linear equations:
+
+\subsection{1. Substitution Method}
+
+\textbf{Steps:}
+\begin{enumerate}
+  \item Solve one equation for one variable.
+  \item Substitute this expression into the other equation.
+  \item Solve for the remaining variable.
+  \item Plug back in to find the other variable.
+\end{enumerate}
+
+\textbf{Example:}
+\[
+\begin{aligned}
+y &= 2x + 1 \\
+3x + y &= 13
+\end{aligned}
+\]
+
+Substitute \( y = 2x + 1 \) into the second equation:
+\[
+3x + (2x + 1) = 13 \Rightarrow 5x = 12 \Rightarrow x = \frac{12}{5}
+\]
+Then find \( y \):
+\[
+y = 2\left(\frac{12}{5}\right) + 1 = \frac{24}{5} + \frac{5}{5} = \frac{29}{5}
+\]
+
+\subsection{2. Elimination Method}
+
+\textbf{Steps:}
+\begin{enumerate}
+  \item Align equations and eliminate one variable by addition or subtraction.
+  \item Solve for the remaining variable.
+  \item Substitute back to find the other variable.
+\end{enumerate}
+
+\textbf{Example:}
+\[
+\begin{aligned}
+2x + 3y &= 7 \\
+4x - 3y &= 5
+\end{aligned}
+\]
+
+Add the two equations:
+\[
+(2x + 3y) + (4x - 3y) = 7 + 5 \Rightarrow 6x = 12 \Rightarrow x = 2
+\]
+
+Substitute \( x = 2 \) into the first equation:
+\[
+2(2) + 3y = 7 \Rightarrow 4 + 3y = 7 \Rightarrow y = 1
+\]
+
+\subsection{3. Graphing Method}
+
+\textbf{Steps:}
+\begin{enumerate}
+  \item Graph both equations on the same coordinate plane.
+  \item Identify the point of intersection.
+\end{enumerate}
+
+\textbf{Example:}
+\[
+\begin{aligned}
+y &= x + 1 \\
+y &= -x + 5
+\end{aligned}
+\]
+
+Graph both lines. The intersection point is:
+\[
+x + 1 = -x + 5 \Rightarrow 2x = 4 \Rightarrow x = 2, \quad y = 3
+\]
+
+\textbf{Solution: } \( (2, 3) \)
+
+\begin{tcolorbox}[colback=blue!5!white, colframe=blue!80!black, title=System of Equations Summary]
+\begin{itemize}
+  \item \textbf{Substitution:} Use when one equation is already solved for a variable.
+  \item \textbf{Elimination:} Use when variables align easily for cancellation.
+  \item \textbf{Graphing:} Use to visualize solutions — intersection point is the solution.
+\end{itemize}
+\end{tcolorbox}
+\subsection{Solving Systems of Linear Inequalities (Graphing)}
+
+A \textbf{system of linear inequalities} consists of two or more inequalities. The solution is the region where all the shaded areas (solutions to each inequality) \textbf{overlap}.
+
+\textbf{Steps to Graph:}
+\begin{enumerate}
+  \item Graph each inequality as if it were an equation (\( y = mx + b \)).
+  \item Use a \textbf{dashed line} for \( < \) or \( > \), and a \textbf{solid line} for \( \leq \) or \( \geq \).
+  \item Shade the correct side of the line:
+  \begin{itemize}
+    \item Use a test point (like \( (0, 0) \)) to see which side satisfies the inequality.
+  \end{itemize}
+  \item Repeat for each inequality.
+  \item The \textbf{solution region} is where all shaded areas overlap.
+\end{enumerate}
+
+\textbf{Example:}
+\[
+\begin{cases}
+y \leq 2x + 1 \\
+y > -x + 3
+\end{cases}
+\]
+
+\begin{center}
+\begin{tikzpicture}[scale=0.8]
+  \draw[very thin,color=gray!20] (-4,-2) grid (4,6);
+  \draw[->] (-4,0) -- (4,0) node[right] {\(x\)};
+  \draw[->] (0,-2) -- (0,6) node[above] {\(y\)};
+
+  % y = 2x + 1 (solid line)
+  \draw[domain=-2:1.5,thick,blue] plot (\x,{2*\x+1});
+  \fill[blue!20,opacity=0.6] (-3,-6) -- (2,5) -- (4,5) -- (4,-6) -- cycle;
+
+  % y = -x + 3 (dashed line)
+  \draw[domain=-2:3,thick,red,dashed] plot (\x,{-\x+3});
+  \fill[red!20,opacity=0.6] (-4,6) -- (2,-1) -- (4,-1) -- (4,6) -- cycle;
+
+  \node[blue] at (2,4.5) {\scriptsize \( y \leq 2x + 1 \)};
+  \node[red] at (-1.5,4.5) {\scriptsize \( y > -x + 3 \)};
+\end{tikzpicture}
+\end{center}
+
+\begin{tcolorbox}[colback=green!5!white, colframe=green!80!black, title=Graphing Systems of Inequalities]
+\begin{itemize}
+  \item The \textbf{solution set} is the region where all shaded areas \textbf{intersect}.
+  \item Use \textbf{solid lines} for \( \leq, \geq \); \textbf{dashed lines} for \( <, > \).
+  \item Always test with a point if you're unsure which side to shade.
+\end{itemize}
+\end{tcolorbox}
+
 \end{document}
