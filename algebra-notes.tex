@@ -2219,5 +2219,327 @@ y > -x + 3
   \item Always test with a point if you're unsure which side to shade.
 \end{itemize}
 \end{tcolorbox}
+\section{Exponents and Special Powers}
+
+\subsection*{Powers of Negative Bases}
+
+When a negative number is raised to a power, the result depends on whether the exponent is even or odd:
+
+\begin{itemize}
+  \item \textbf{Even Exponent:} Negative base raised to an even power gives a \textbf{positive} result.
+    \[
+    (-2)^4 = 16
+    \]
+  \item \textbf{Odd Exponent:} Negative base raised to an odd power gives a \textbf{negative} result.
+    \[
+    (-2)^3 = -8
+    \]
+  \item \textbf{Important:} Be careful with parentheses.
+    \[
+    -2^4 = -(2^4) = -16 \quad \text{(Not the same as } (-2)^4 \text{)}
+    \]
+\end{itemize}
+
+\subsection*{Negative Exponents}
+
+A negative exponent represents a reciprocal:
+\[
+a^{-n} = \frac{1}{a^n}, \quad a \neq 0
+\]
+\begin{itemize}
+  \item Example:
+    \[
+    2^{-3} = \frac{1}{2^3} = \frac{1}{8}
+    \]
+  \item Applies to variables as well:
+    \[
+    x^{-2} = \frac{1}{x^2}, \quad x \neq 0
+    \]
+\end{itemize}
+
+\subsection*{Zero Exponent}
+
+Any nonzero number raised to the power of zero equals 1:
+\[
+a^0 = 1, \quad a \neq 0
+\]
+\begin{itemize}
+  \item Example:
+    \[
+    5^0 = 1 \quad\text{and}\quad (-3)^0 = 1
+    \]
+  \item Note: \( 0^0 \) is considered \textbf{undefined}.
+\end{itemize}
+
+\begin{tcolorbox}[colback=yellow!5!white, colframe=yellow!80!black, title=Exponent Rules Summary]
+\begin{itemize}
+  \item \( (-a)^n \): Positive if \( n \) is even, negative if \( n \) is odd.
+  \item \( a^{-n} = \frac{1}{a^n} \) — Negative exponent means reciprocal.
+  \item \( a^0 = 1 \), as long as \( a \neq 0 \).
+\end{itemize}
+\end{tcolorbox}
+
+\section{Fractional Exponents}
+
+\subsection*{What is a Fractional Exponent?}
+
+A fractional exponent represents a \textbf{root}. The general rule is:
+
+\[
+a^{\frac{m}{n}} = \sqrt[n]{a^m} = \left( \sqrt[n]{a} \right)^m
+\]
+
+\textbf{Special case:}
+\[
+a^{\frac{1}{n}} = \sqrt[n]{a}
+\]
+
+\begin{itemize}
+  \item The \textbf{denominator} (\( n \)) of the fraction tells you the \textbf{root}.
+  \item The \textbf{numerator} (\( m \)) tells you the \textbf{power}.
+\end{itemize}
+
+\subsection*{Examples}
+
+\begin{align*}
+  9^{\frac{1}{2}} &= \sqrt{9} = 3 \\
+  8^{\frac{1}{3}} &= \sqrt[3]{8} = 2 \\
+  16^{\frac{3}{4}} &= \left( \sqrt[4]{16} \right)^3 = 2^3 = 8 \\
+  27^{\frac{2}{3}} &= \left( \sqrt[3]{27} \right)^2 = 3^2 = 9
+\end{align*}
+
+\begin{tcolorbox}[colback=cyan!5!white, colframe=cyan!80!black, title=Fractional Exponents Summary]
+\begin{itemize}
+  \item \( a^{\frac{1}{n}} = \sqrt[n]{a} \)
+  \item \( a^{\frac{m}{n}} = \sqrt[n]{a^m} = \left( \sqrt[n]{a} \right)^m \)
+  \item Fractional exponents are just another way to express roots and powers.
+\end{itemize}
+\end{tcolorbox}
+
+\subsection{Product Property of Radicals}
+
+The \textbf{Product Property of Radicals} states that:
+
+\[
+\sqrt{a} \cdot \sqrt{b} = \sqrt{ab}
+\quad \text{where } a \geq 0,\, b \geq 0
+\]
+
+This property allows you to multiply square roots by combining the radicands into a single radical.
+
+\begin{tcolorbox}[colback=blue!5!white, colframe=blue!75!black, title=Product Property of Radicals]
+\[
+\sqrt[n]{a} \cdot \sqrt[n]{b} = \sqrt[n]{ab}
+\quad \text{(for } a, b \geq 0 \text{ and } n \in \mathbb{N},\, n \geq 2 \text{)}
+\]
+\end{tcolorbox}
+
+\textbf{Examples:}
+\begin{itemize}
+  \item \( \sqrt{3} \cdot \sqrt{12} = \sqrt{36} = 6 \)
+  \item \( \sqrt[3]{2} \cdot \sqrt[3]{4} = \sqrt[3]{8} = 2 \)
+\end{itemize}
+
+\textbf{Note:} This rule does \textbf{not} apply to negative radicands when working within the real numbers.
+
+
+\section{Rationalizing the Denominator}
+
+Sometimes, we encounter expressions where the denominator contains a square root or an irrational number. Rationalizing the denominator means rewriting the expression so that there are \textbf{no radicals in the denominator}.
+
+\vspace{1em}
+
+\subsection*{Why Rationalize?}
+Rationalizing helps simplify expressions for further operations and provides a standard form that’s easier to compare or graph.
+
+\subsection*{Case 1: Single Radical in the Denominator}
+
+\begin{tcolorbox}[colback=blue!5!white, colframe=blue!80!black, title=Example: Single Radical]
+Simplify:
+\[
+\frac{3}{\sqrt{2}}
+\]
+
+Multiply numerator and denominator by \( \sqrt{2} \):
+\[
+\frac{3}{\sqrt{2}} \cdot \frac{\sqrt{2}}{\sqrt{2}} = \frac{3\sqrt{2}}{2}
+\]
+\end{tcolorbox}
+
+\subsection*{Case 2: Binomial with a Radical (Use the Conjugate)}
+
+When the denominator is a binomial with a radical, multiply by the conjugate:
+\[
+\text{Conjugate of } a + \sqrt{b} \text{ is } a - \sqrt{b}
+\]
+
+\begin{tcolorbox}[colback=purple!5!white, colframe=purple!80!black, title=Example: Binomial Denominator]
+Simplify:
+\[
+\frac{5}{3 + \sqrt{2}}
+\]
+
+Multiply by the conjugate:
+\[
+\frac{5}{3 + \sqrt{2}} \cdot \frac{3 - \sqrt{2}}{3 - \sqrt{2}} = \frac{5(3 - \sqrt{2})}{(3 + \sqrt{2})(3 - \sqrt{2})}
+\]
+
+\[
+= \frac{15 - 5\sqrt{2}}{9 - 2} = \frac{15 - 5\sqrt{2}}{7}
+\]
+\end{tcolorbox}
+
+\subsection*{Summary}
+
+\begin{tcolorbox}[colback=gray!5!white, colframe=black, title=Rationalizing Rules]
+\begin{itemize}
+  \item Multiply by the radical if it's a single term.
+  \item Multiply by the conjugate if it's a binomial.
+  \item Use: \( (a + b)(a - b) = a^2 - b^2 \) to eliminate radicals.
+\end{itemize}
+\end{tcolorbox}
+
+\subsection{Quotient Theorem}
+
+The \textbf{Quotient Theorem} for exponents helps simplify expressions involving division with the same base.
+
+\begin{tcolorbox}[colback=green!5!white, colframe=green!50!black, title=Quotient Rule of Exponents]
+If \( a \neq 0 \), then:
+\[
+\frac{a^m}{a^n} = a^{m - n}
+\]
+\end{tcolorbox}
+
+\subsubsection*{Example 1: Basic Exponents}
+\[
+\frac{x^5}{x^2} = x^{5 - 2} = x^3
+\]
+
+\subsubsection*{Example 2: Negative Result}
+\[
+\frac{y^3}{y^7} = y^{3 - 7} = y^{-4} = \frac{1}{y^4}
+\]
+
+\subsubsection*{Quotient Rule for Radicals}
+
+\begin{tcolorbox}[colback=blue!5!white, colframe=blue!70!black, title=Quotient Rule of Radicals]
+For \( a, b > 0 \), and \( n \in \mathbb{N} \):
+\[
+\sqrt[n]{\frac{a}{b}} = \frac{\sqrt[n]{a}}{\sqrt[n]{b}}
+\]
+\end{tcolorbox}
+
+\subsubsection*{Example 3: Radical Quotient}
+\[
+\sqrt{\frac{16}{25}} = \frac{\sqrt{16}}{\sqrt{25}} = \frac{4}{5}
+\]
+
+\begin{tcolorbox}[colback=gray!5!white, colframe=gray!80!black, title=Summary]
+\begin{itemize}
+  \item Subtract exponents when dividing powers with the same base.
+  \item Simplify radicals by dividing under the root, or split into two roots.
+  \item Remember: \( a^0 = 1 \) and \( a^{-n} = \frac{1}{a^n} \)
+\end{itemize}
+\end{tcolorbox}
+
+\subsection{Simplifying Radical Expressions (Rationalizing the Denominator)}
+
+When simplifying radical expressions with square roots in the denominator, we must \textbf{rationalize the denominator} — that is, eliminate the square root from the bottom of the fraction.
+
+\medskip
+\textbf{Example 1:}
+\[
+2\sqrt{\frac{3}{5}} - 6\sqrt{\frac{5}{3}}
+\]
+
+\textbf{Step 1:} Use the identity \(\sqrt{\frac{a}{b}} = \frac{\sqrt{a}}{\sqrt{b}}\)
+\[
+= 2 \cdot \frac{\sqrt{3}}{\sqrt{5}} - 6 \cdot \frac{\sqrt{5}}{\sqrt{3}}
+\]
+
+\textbf{Step 2:} Rationalize each term
+\[
+= 2 \cdot \frac{\sqrt{3} \cdot \sqrt{5}}{\sqrt{5} \cdot \sqrt{5}} - 6 \cdot \frac{\sqrt{5} \cdot \sqrt{3}}{\sqrt{3} \cdot \sqrt{3}}
+= 2 \cdot \frac{\sqrt{15}}{5} - 6 \cdot \frac{\sqrt{15}}{3}
+\]
+
+\textbf{Step 3:} Simplify the coefficients
+\[
+= \frac{2\sqrt{15}}{5} - 2\sqrt{15}
+= \frac{2\sqrt{15}}{5} - \frac{10\sqrt{15}}{5}
+= \frac{-8\sqrt{15}}{5}
+\]
+
+\[
+\boxed{\frac{-8\sqrt{15}}{5}}
+\]
+
+\bigskip
+\textbf{Example 2:}
+\[
+2\sqrt{\frac{3}{5}} - 5\sqrt{\frac{5}{3}} + \sqrt{135}
+\]
+
+Break and simplify:
+
+\begin{align*}
+2\sqrt{\frac{3}{5}} &= 2 \cdot \frac{\sqrt{15}}{5} = \frac{2\sqrt{15}}{5} \\
+5\sqrt{\frac{5}{3}} &= 5 \cdot \frac{\sqrt{15}}{3} = \frac{5\sqrt{15}}{3} \\
+\sqrt{135} &= \sqrt{9 \cdot 15} = 3\sqrt{15}
+\end{align*}
+
+\[
+\frac{2\sqrt{15}}{5} - \frac{5\sqrt{15}}{3} + 3\sqrt{15}
+= \left( \frac{2}{5} - \frac{5}{3} + 3 \right)\sqrt{15}
+\]
+
+Convert to common denominators:
+\[
+= \left( \frac{2}{5} - \frac{5}{3} + \frac{9}{3} \right)\sqrt{15}
+= \left( \frac{2}{5} + \frac{4}{3} \right)\sqrt{15}
+= \frac{26}{15} \sqrt{15}
+\]
+
+\[
+\boxed{\frac{26\sqrt{15}}{15}}
+\]
+
+\subsection{Rationalizing with the Conjugate}
+
+Sometimes, a radical appears in the denominator as part of a \textbf{binomial}, like \( \frac{1}{\sqrt{a} + \sqrt{b}} \). In these cases, we \textbf{rationalize the denominator} by multiplying the numerator and denominator by the \textbf{conjugate} of the denominator.
+
+\medskip
+\textbf{The Conjugate:}
+The conjugate of \( \sqrt{a} + \sqrt{b} \) is \( \sqrt{a} - \sqrt{b} \) (and vice versa).
+Multiplying conjugates uses the identity:
+\[
+(\sqrt{a} + \sqrt{b})(\sqrt{a} - \sqrt{b}) = a - b
+\]
+
+\bigskip
+\textbf{Example:}
+\[
+\frac{1}{\sqrt{3} + \sqrt{2}}
+\]
+
+Multiply numerator and denominator by the conjugate \( \sqrt{3} - \sqrt{2} \):
+
+\[
+\frac{1}{\sqrt{3} + \sqrt{2}} \cdot \frac{\sqrt{3} - \sqrt{2}}{\sqrt{3} - \sqrt{2}} = \frac{\sqrt{3} - \sqrt{2}}{(\sqrt{3} + \sqrt{2})(\sqrt{3} - \sqrt{2})}
+\]
+
+Simplify the denominator using the difference of squares:
+\[
+= \frac{\sqrt{3} - \sqrt{2}}{3 - 2} = \sqrt{3} - \sqrt{2}
+\]
+
+\[
+\boxed{\frac{1}{\sqrt{3} + \sqrt{2}} = \sqrt{3} - \sqrt{2}}
+\]
+
+\bigskip
+\textbf{Key Idea:}
+Use conjugates to eliminate radicals in binomial denominators.
+This technique helps make expressions easier to work with — especially in higher-level algebra.
 
 \end{document}
