@@ -31,7 +31,7 @@
 \titleformat{\subsection}{\normalsize\bfseries}{\thesubsection}{1em}{}
 
 % --- Title ---
-\title{\Huge \textbf{Algebra}\\\large Notes and Practice}
+\title{\Huge \textbf{Algebra}\\\large Notes}
 \author{Michael Leibbrandt}
 \date{\today}
 
@@ -2541,5 +2541,94 @@ Simplify the denominator using the difference of squares:
 \textbf{Key Idea:}
 Use conjugates to eliminate radicals in binomial denominators.
 This technique helps make expressions easier to work with — especially in higher-level algebra.
+
+\section{Imaginary Numbers}
+
+Imaginary numbers are numbers that involve the square root of a negative number. In mathematics, the unit imaginary number is denoted as \( i \), where:
+
+\[
+i = \sqrt{-1}
+\]
+
+This means:
+
+\[
+i^2 = -1
+\]
+
+\subsection{Examples of Imaginary Numbers}
+\begin{itemize}
+  \item \( \sqrt{-4} = \sqrt{4} \cdot \sqrt{-1} = 2i \)
+  \item \( \sqrt{-9} = 3i \)
+  \item \( 7i \) is an imaginary number
+\end{itemize}
+
+\subsection{Complex Numbers}
+A number that includes both a real and an imaginary part is called a \textbf{complex number}:
+
+\[
+a + bi \quad \text{where } a, b \in \mathbb{R}
+\]
+
+\subsection{Operations with Imaginary Numbers}
+\begin{itemize}
+  \item \textbf{Addition/Subtraction:} Combine like terms.
+    \[
+    (3 + 2i) + (1 - 5i) = 4 - 3i
+    \]
+  \item \textbf{Multiplication:} Use distributive property and simplify using \( i^2 = -1 \).
+    \[
+    (2 + 3i)(1 - 4i) = 2 - 8i + 3i - 12i^2 = 2 - 5i + 12 = 14 - 5i
+    \]
+\end{itemize}
+
+\begin{tcolorbox}[colback=cyan!5!white, colframe=cyan!80!black, title=Summary]
+\begin{itemize}
+  \item Imaginary unit: \( i = \sqrt{-1} \)
+  \item \( i^2 = -1 \)
+  \item Complex numbers: \( a + bi \)
+  \item \( \sqrt{-x} = i\sqrt{x} \)
+\end{itemize}
+\end{tcolorbox}
+
+\subsection{Using the Conjugate to Simplify Expressions}
+
+When an expression contains a binomial with a radical or imaginary number in the denominator, we \textbf{multiply by the conjugate} to rationalize or simplify.
+
+\medskip
+
+\textbf{Definition:} The \textbf{conjugate} of a binomial \( a + b \) is \( a - b \), and vice versa.
+
+\medskip
+
+\textbf{Why it works:} Multiplying a binomial by its conjugate results in a \textbf{difference of squares}, eliminating the radical or imaginary part:
+\[
+(a + b)(a - b) = a^2 - b^2
+\]
+
+\medskip
+
+\textbf{Example 1 (with a radical):}
+\[
+\frac{1}{\sqrt{5} + \sqrt{3}} \cdot \frac{\sqrt{5} - \sqrt{3}}{\sqrt{5} - \sqrt{3}} = \frac{\sqrt{5} - \sqrt{3}}{(\sqrt{5})^2 - (\sqrt{3})^2} = \frac{\sqrt{5} - \sqrt{3}}{2}
+\]
+
+\medskip
+
+\textbf{Example 2 (with imaginary numbers):}
+\[
+\frac{3}{2 + i} \cdot \frac{2 - i}{2 - i} = \frac{3(2 - i)}{(2 + i)(2 - i)} = \frac{6 - 3i}{4 + 1} = \frac{6 - 3i}{5}
+\]
+
+\medskip
+
+\textbf{Final Answer:}
+\[
+\frac{6 - 3i}{5} = \frac{6}{5} - \frac{3}{5}i
+\]
+
+\begin{tcolorbox}[colback=blue!5!white, colframe=blue!80!black, title=Key Tip]
+Always multiply by the conjugate of the denominator when simplifying expressions that contain square roots or imaginary numbers in the denominator.
+\end{tcolorbox}
 
 \end{document}
