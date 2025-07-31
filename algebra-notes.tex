@@ -2631,4 +2631,174 @@ When an expression contains a binomial with a radical or imaginary number in the
 Always multiply by the conjugate of the denominator when simplifying expressions that contain square roots or imaginary numbers in the denominator.
 \end{tcolorbox}
 
+\section{Coefficients in Quadratic Equations}
+
+A \textbf{quadratic equation} is an equation of the form:
+\[
+ax^2 + bx + c = 0
+\]
+where:
+\begin{itemize}
+  \item \( a \), \( b \), and \( c \) are \textbf{coefficients}
+  \item \( x \) is the variable
+  \item \( a \neq 0 \)
+\end{itemize}
+
+\textbf{Each coefficient has a role:}
+\begin{itemize}
+  \item \( a \) is the \textbf{leading coefficient} — it determines the \emph{direction} and \emph{width} of the parabola.
+    \begin{itemize}
+      \item If \( a > 0 \), the parabola opens \textbf{upward}.
+      \item If \( a < 0 \), it opens \textbf{downward}.
+      \item A larger \(|a|\) makes the parabola narrower; a smaller \(|a|\) makes it wider.
+    \end{itemize}
+  \item \( b \) affects the \textbf{location of the vertex} along the x-axis.
+  \item \( c \) is the \textbf{constant term}, and it represents the \textbf{y-intercept} — where the graph crosses the y-axis.
+\end{itemize}
+
+\medskip
+
+\textbf{Example:}
+\[
+y = 2x^2 - 4x + 1
+\]
+\begin{itemize}
+  \item \( a = 2 \): opens upward and is narrower than \( x^2 \)
+  \item \( b = -4 \)
+  \item \( c = 1 \): y-intercept at \( (0, 1) \)
+\end{itemize}
+
+\begin{tcolorbox}[colback=yellow!5!white, colframe=yellow!80!black, title=Summary]
+The coefficients in a quadratic equation control the shape, direction, and position of the parabola on the graph.
+\end{tcolorbox}
+
+\subsection{Coefficients in Quadratics (Factoring)}
+
+When factoring a quadratic expression of the form:
+\[
+ax^2 + bx + c
+\]
+the \textbf{coefficients} \( a \), \( b \), and \( c \) play a key role in determining how to factor it.
+
+\medskip
+
+\textbf{Cases:}
+
+\begin{enumerate}
+  \item \textbf{When \( a = 1 \):}
+  Factor the expression by finding two numbers that:
+  \begin{itemize}
+    \item Multiply to \( c \)
+    \item Add to \( b \)
+  \end{itemize}
+
+  \textbf{Example:}
+  \[
+  x^2 + 5x + 6 = (x + 2)(x + 3)
+  \]
+
+  \item \textbf{When \( a \neq 1 \):}
+  Use the \textbf{AC method} (also called \emph{factoring by grouping}):
+  \begin{itemize}
+    \item Multiply \( a \cdot c \)
+    \item Find two numbers that multiply to \( ac \) and add to \( b \)
+    \item Rewrite the middle term using those numbers
+    \item Factor by grouping
+  \end{itemize}
+
+  \textbf{Example:}
+  \[
+  6x^2 + 11x + 3
+  \]
+  Multiply \( a \cdot c = 6 \cdot 3 = 18 \)
+
+  Find numbers that multiply to 18 and add to 11: \( 9 \) and \( 2 \)
+
+  \[
+  6x^2 + 9x + 2x + 3 = 3x(2x + 3) + 1(2x + 3) = (3x + 1)(2x + 3)
+  \]
+\end{enumerate}
+
+\begin{tcolorbox}[colback=blue!5!white, colframe=blue!80!black, title=Key Tip]
+Always check for a greatest common factor (GCF) before factoring!
+\end{tcolorbox}
+
+\section{Difference of Cubes}
+
+A \textbf{difference of cubes} is an expression of the form:
+
+\[
+a^3 - b^3 = (a - b)(a^2 + ab + b^2)
+\]
+
+This identity allows us to factor expressions where both terms are perfect cubes.
+
+\begin{tcolorbox}[colback=blue!5!white, colframe=blue!80!black, title=Key Formula]
+\[
+a^3 - b^3 = (a - b)(a^2 + ab + b^2)
+\]
+\end{tcolorbox}
+
+\subsubsection*{Example: Factor \( x^3 - 8 \)}
+
+Step 1: Recognize both terms as perfect cubes.
+
+\[
+x^3 - 8 = x^3 - 2^3
+\]
+
+Step 2: Apply the difference of cubes formula.
+
+\[
+x^3 - 2^3 = (x - 2)(x^2 + 2x + 4)
+\]
+
+\subsubsection*{Another Example: Factor \( 27y^3 - 64 \)}
+
+Step 1: Write each term as a cube.
+
+\[
+27y^3 - 64 = (3y)^3 - 4^3
+\]
+
+Step 2: Use the formula:
+
+\[
+(3y - 4)\left((3y)^2 + 3y \cdot 4 + 4^2\right) = (3y - 4)(9y^2 + 12y + 16)
+\]
+
+\subsubsection*{Another Example: Factor \( x^3 - 64m^6r^9 \)}
+
+Step 1: Recognize each term as a cube:
+
+\[
+x^3 - (4m^2r^3)^3
+\]
+
+Step 2: Apply the formula:
+
+\[
+x^3 - (4m^2r^3)^3 = \left(x - 4m^2r^3\right)\left(x^2 + x \cdot 4m^2r^3 + (4m^2r^3)^2\right)
+\]
+
+Step 3: Simplify:
+
+\[
+= \left(x - 4m^2r^3\right)\left(x^2 + 4m^2r^3x + 16m^4r^6\right)
+\]
+
+\begin{tcolorbox}[colback=yellow!5!white, colframe=yellow!80!black, title=Final Answer]
+\[
+x^3 - 64m^6r^9 = \left(x - 4m^2r^3\right)\left(x^2 + 4m^2r^3x + 16m^4r^6\right)
+\]
+\end{tcolorbox}
+
+\subsubsection*{Tip: Always double-check}
+Make sure:
+\begin{itemize}
+  \item Both terms are perfect cubes.
+  \item The pattern is subtraction. For addition, use the sum of cubes formula.
+\end{itemize}
+
+
 \end{document}
