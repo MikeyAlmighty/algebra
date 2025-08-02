@@ -2800,5 +2800,209 @@ Make sure:
   \item The pattern is subtraction. For addition, use the sum of cubes formula.
 \end{itemize}
 
+\section{Sum of Cubes}
+
+A binomial in the form:
+\[
+a^3 + b^3
+\]
+can be factored using the identity:
+
+\[
+a^3 + b^3 = (a + b)(a^2 - ab + b^2)
+\]
+
+\begin{tcolorbox}[colback=blue!5!white, colframe=blue!80!black, title=Sum of Cubes Formula]
+\[
+a^3 + b^3 = (a + b)(a^2 - ab + b^2)
+\]
+\end{tcolorbox}
+
+\textbf{Steps:}
+\begin{enumerate}
+  \item Identify the cube root of each term.
+  \item Apply the formula \( (a + b)(a^2 - ab + b^2) \).
+  \item Simplify each part of the second factor.
+\end{enumerate}
+
+\textbf{Example:}
+Factor \( x^3 + 27 \)
+
+\begin{align*}
+x^3 + 27 &= x^3 + 3^3 \\
+&= (x + 3)(x^2 - 3x + 9)
+\end{align*}
+
+\begin{tcolorbox}[colback=yellow!5!white, colframe=yellow!80!black, title=Remember:]
+\begin{itemize}
+  \item Sum of cubes uses \( (a + b)(a^2 - ab + b^2) \)
+  \item The middle term in the trinomial is always \(-ab\), even though the binomial is a sum.
+\end{itemize}
+\end{tcolorbox}
+
+\section{Simplifying Rational Functions}
+
+A \textbf{rational function} is a ratio of two polynomials:
+\[
+f(x) = \frac{P(x)}{Q(x)}
+\]
+where \( Q(x) \neq 0 \).
+
+\subsubsection*{Steps to Simplify a Rational Function:}
+\begin{enumerate}
+  \item Factor both the numerator and the denominator completely.
+  \item Cancel any common factors.
+  \item State any restrictions (values that make the denominator zero).
+\end{enumerate}
+
+\begin{example}
+Simplify:
+\[
+\frac{3x^4 - 9x^3}{6x^2}
+\]
+
+\textbf{Step 1: Factor both numerator and denominator.}
+
+Numerator: \( 3x^4 - 9x^3 = 3x^3(x - 3) \) \\
+Denominator: \( 6x^2 \)
+
+\textbf{Step 2: Cancel common factors.}
+
+\[
+\frac{3x^3(x - 3)}{6x^2} = \frac{x(x - 3)}{2}
+\]
+
+\textbf{Step 3: State the restriction.} \\
+\( x \neq 0 \) (the original denominator can't be zero)
+
+\textbf{Final Answer:}
+\[
+\frac{x(x - 3)}{2}, \quad x \neq 0
+\]
+\end{example}
+
+\begin{tcolorbox}[colback=blue!5!white, colframe=blue!80!black, title=Tips]
+\begin{itemize}
+  \item Always factor before simplifying.
+  \item Be careful not to cancel terms — only factors.
+  \item Remember to state domain restrictions.
+\end{itemize}
+\end{tcolorbox}
+
+\subsection{Adding and Subtracting Rational Functions}
+
+To \textbf{add or subtract rational functions}, you combine them over a common denominator — just like with numerical fractions.
+
+\subsubsection*{Steps:}
+\begin{enumerate}
+  \item Factor all denominators.
+  \item Find the \textbf{least common denominator} (LCD).
+  \item Rewrite each rational function with the LCD.
+  \item Combine the numerators (add or subtract).
+  \item Simplify the result if possible.
+  \item State any restrictions on the variable.
+\end{enumerate}
+
+\begin{example}
+Add:
+\[
+\frac{2}{x} + \frac{3}{x + 1}
+\]
+
+\textbf{Step 1:} The denominators are already factored. \\
+\textbf{Step 2:} LCD = \( x(x + 1) \)
+
+\textbf{Step 3:} Rewrite each with LCD:
+\[
+\frac{2(x + 1)}{x(x + 1)} + \frac{3x}{x(x + 1)}
+\]
+
+\textbf{Step 4:} Combine:
+\[
+\frac{2(x + 1) + 3x}{x(x + 1)} = \frac{2x + 2 + 3x}{x(x + 1)} = \frac{5x + 2}{x(x + 1)}
+\]
+
+\textbf{Restrictions:} \( x \neq 0, x \neq -1 \)
+
+\end{example}
+
+\begin{example}
+Subtract:
+\[
+\frac{x}{x - 2} - \frac{3}{x}
+\]
+
+\textbf{Step 1:} Denominators are already factored. \\
+\textbf{Step 2:} LCD = \( x(x - 2) \)
+
+\textbf{Step 3:} Rewrite each:
+\[
+\frac{x \cdot x}{x(x - 2)} - \frac{3(x - 2)}{x(x - 2)}
+\]
+
+\textbf{Step 4:} Combine:
+\[
+\frac{x^2 - 3(x - 2)}{x(x - 2)} = \frac{x^2 - 3x + 6}{x(x - 2)}
+\]
+
+\textbf{Restrictions:} \( x \neq 0, x \neq 2 \)
+
+\end{example}
+
+\begin{tcolorbox}[colback=yellow!5!white, colframe=yellow!80!black, title=Note]
+\begin{itemize}
+  \item Always factor denominators to help find the LCD.
+  \item Don’t forget to distribute negative signs when subtracting!
+  \item Include domain restrictions from all original denominators.
+\end{itemize}
+\end{tcolorbox}
+
+\subsection{Factoring to Find a Common Denominator}
+
+When adding or subtracting rational expressions, you must first express each fraction with the \textbf{least common denominator} (LCD). This often requires factoring the denominators.
+
+\subsubsection*{Steps:}
+\begin{enumerate}
+  \item Factor each denominator completely.
+  \item Identify all unique factors — include each factor the greatest number of times it appears in any denominator.
+  \item Multiply these factors to get the LCD.
+  \item Rewrite each expression with the LCD as the new denominator.
+\end{enumerate}
+
+\begin{example}
+Add:
+\[
+\frac{3}{x^2 - x} + \frac{2}{x^2 - 1}
+\]
+
+\textbf{Step 1: Factor each denominator:}
+\[
+x^2 - x = x(x - 1), \quad x^2 - 1 = (x - 1)(x + 1)
+\]
+
+\textbf{Step 2: LCD = } \( x(x - 1)(x + 1) \)
+
+\textbf{Step 3: Rewrite each fraction:}
+\[
+\frac{3(x + 1)}{x(x - 1)(x + 1)} + \frac{2x}{x(x - 1)(x + 1)}
+\]
+
+\textbf{Step 4: Combine:}
+\[
+\frac{3(x + 1) + 2x}{x(x - 1)(x + 1)} = \frac{3x + 3 + 2x}{x(x - 1)(x + 1)} = \frac{5x + 3}{x(x - 1)(x + 1)}
+\]
+
+\textbf{Restrictions:} \( x \neq 0, \pm1 \)
+
+\end{example}
+
+\begin{tcolorbox}[colback=blue!5!white, colframe=blue!80!black, title=Tips for Factoring]
+\begin{itemize}
+  \item Always factor completely before identifying the LCD.
+  \item Look for common patterns: differences of squares, trinomials, and factoring by grouping.
+  \item Once the LCD is found, rewrite each fraction using equivalent expressions.
+\end{itemize}
+\end{tcolorbox}
+
 
 \end{document}
