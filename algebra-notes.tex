@@ -3004,5 +3004,142 @@ x^2 - x = x(x - 1), \quad x^2 - 1 = (x - 1)(x + 1)
 \end{itemize}
 \end{tcolorbox}
 
+\subsection{Multiplying Rational Functions}
+
+To multiply rational functions, follow these steps:
+
+\begin{enumerate}
+  \item \textbf{Factor all numerators and denominators}, if possible.
+  \item \textbf{Multiply the numerators} together and multiply the denominators together.
+  \item \textbf{Cancel any common factors} that appear in both the numerator and the denominator.
+\end{enumerate}
+
+\textbf{Example:}
+\[
+\frac{3x^2}{x^2 - 9} \cdot \frac{x^2 - 3x}{6x}
+\]
+
+\textbf{Step 1: Factor where possible}
+\[
+= \frac{3x^2}{(x - 3)(x + 3)} \cdot \frac{x(x - 3)}{6x}
+\]
+
+\textbf{Step 2: Multiply across}
+\[
+= \frac{3x^2 \cdot x(x - 3)}{(x - 3)(x + 3) \cdot 6x}
+\]
+
+\textbf{Step 3: Cancel common factors}
+\begin{itemize}
+  \item Cancel \( x \) from numerator and denominator
+  \item Cancel \( x - 3 \)
+\end{itemize}
+\[
+= \frac{3x \cdot x}{6(x + 3)} = \frac{3x^2}{6(x + 3)} = \frac{x^2}{2(x + 3)}
+\]
+
+\begin{tcolorbox}[colback=blue!5!white, colframe=blue!80!black, title=Key Tip]
+Always factor before multiplying to identify common factors that can be cancelled.
+\end{tcolorbox}
+
+
+\subsection{Dividing Rational Functions}
+
+A \textbf{rational function} is a quotient of two polynomials, i.e.,
+\[
+R(x) = \frac{P(x)}{Q(x)},
+\]
+where \(P(x)\) and \(Q(x)\) are polynomials and \(Q(x) \neq 0\).
+
+To \textbf{divide} one rational function by another, say
+\[
+\frac{P_1(x)}{Q_1(x)} \div \frac{P_2(x)}{Q_2(x)},
+\]
+we multiply the first function by the reciprocal of the second:
+\[
+\frac{P_1(x)}{Q_1(x)} \times \frac{Q_2(x)}{P_2(x)} = \frac{P_1(x) \cdot Q_2(x)}{Q_1(x) \cdot P_2(x)}.
+\]
+
+\textbf{Note:} Make sure that \(P_2(x) \neq 0\) to avoid division by zero.
+
+\bigskip
+
+\textbf{Example:} Divide
+\[
+\frac{2x^2 - 3}{x + 1} \div \frac{x - 4}{x^2 + x}.
+\]
+
+Solution:
+\[
+\frac{2x^2 - 3}{x + 1} \times \frac{x^2 + x}{x - 4} = \frac{(2x^2 - 3)(x^2 + x)}{(x + 1)(x - 4)}.
+\]
+
+You can simplify further by factoring polynomials if possible.
+
+\subsection{Dividing Rational Functions with Domain Restrictions}
+
+Given two rational functions
+\[
+f(x) = \frac{P_1(x)}{Q_1(x)} \quad \text{and} \quad g(x) = \frac{P_2(x)}{Q_2(x)},
+\]
+where \(Q_1(x) \neq 0\) and \(Q_2(x) \neq 0\),
+
+their division is defined as
+\[
+\frac{f(x)}{g(x)} = \frac{\frac{P_1(x)}{Q_1(x)}}{\frac{P_2(x)}{Q_2(x)}} = \frac{P_1(x)}{Q_1(x)} \times \frac{Q_2(x)}{P_2(x)} = \frac{P_1(x) \cdot Q_2(x)}{Q_1(x) \cdot P_2(x)},
+\]
+with the restriction that \(P_2(x) \neq 0\) to avoid division by zero.
+
+\bigskip
+
+\textbf{Important:} The domain of the resulting function excludes all values of \(x\) that make any denominator zero, including:
+\[
+Q_1(x) = 0, \quad Q_2(x) = 0, \quad \text{and} \quad P_2(x) = 0.
+\]
+
+\bigskip
+
+\textbf{Example:}
+
+Divide
+\[
+\frac{3x + 2}{x^2 - 4} \div \frac{x - 1}{x + 3}.
+\]
+
+\textbf{Step 1:} Rewrite as multiplication by the reciprocal:
+\[
+\frac{3x + 2}{x^2 - 4} \times \frac{x + 3}{x - 1} = \frac{(3x + 2)(x + 3)}{(x^2 - 4)(x - 1)}.
+\]
+
+\textbf{Step 2:} Factor denominators where possible:
+\[
+x^2 - 4 = (x - 2)(x + 2).
+\]
+
+So,
+\[
+\frac{(3x + 2)(x + 3)}{(x - 2)(x + 2)(x - 1)}.
+\]
+
+\textbf{Step 3:} Determine excluded values (domain restrictions):
+
+- From original denominators:
+\[
+x^2 - 4 = 0 \implies x = 2, -2,
+\]
+and
+\[
+x + 3 = 0 \implies x = -3.
+\]
+
+- From the denominator of the reciprocal’s numerator (which is \(x-1\) in the denominator after multiplication):
+\[
+x - 1 = 0 \implies x = 1.
+\]
+
+\textbf{Therefore, the domain excludes}:
+\[
+x \neq -3, -2, 1, 2.
+\]
 
 \end{document}
