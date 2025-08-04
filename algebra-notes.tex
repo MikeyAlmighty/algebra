@@ -3289,4 +3289,216 @@ Step 3: Solve the resulting equation:
 
 \paragraph{Summary:} Multiplying both sides of a fractional equation by the LCD is a reliable method to clear denominators, simplifying the equation to one with whole numbers that can be solved using standard algebraic techniques.
 
+\subsection{Rational Equations}
+
+Rational equations are equations that contain one or more rational expressions—fractions in which the numerator and/or denominator contains a variable. To solve rational equations, it is usually best to eliminate denominators by multiplying both sides of the equation by the least common denominator (LCD).
+
+\paragraph{Example:} Solve the equation
+\[
+\frac{4}{x} + \frac{6}{x + a} = 1
+\]
+
+\paragraph{Solution:}
+
+Step 1: Identify the least common denominator (LCD).
+The denominators are \( x \) and \( x + a \), so the LCD is:
+\[
+\text{LCD} = x(x + a)
+\]
+
+Step 2: Multiply each term in the equation by the LCD:
+\[
+x(x + a) \cdot \left( \frac{4}{x} + \frac{6}{x + a} \right) = x(x + a) \cdot 1
+\]
+
+Step 3: Simplify each term:
+\[
+4(x + a) + 6x = x(x + a)
+\]
+
+Step 4: Expand both sides:
+\[
+4x + 4a + 6x = x^2 + ax
+\]
+
+Step 5: Combine like terms:
+\[
+10x + 4a = x^2 + ax
+\]
+
+Step 6: Bring all terms to one side:
+\[
+10x + 4a - x^2 - ax = 0
+\]
+
+Or, rewritten in standard form:
+\[
+-x^2 + (10 - a)x + 4a = 0
+\]
+
+This is now a quadratic equation in terms of \( x \). You can solve it using factoring, completing the square, or the quadratic formula depending on the values of \( a \).
+
+\paragraph{Summary:} To solve rational equations:
+\begin{itemize}
+    \item Identify the least common denominator (LCD).
+    \item Multiply every term by the LCD to eliminate fractions.
+    \item Simplify and solve the resulting equation.
+    \item Always check for extraneous solutions—values that make any original denominator zero.
+\end{itemize}
+
+\subsection{Radical Equations}
+
+Radical equations are equations that contain variables within a radical, most commonly a square root. To solve these equations, the general strategy is to isolate the radical and then eliminate it by raising both sides of the equation to a power.
+
+\paragraph{Example:} Solve the equation
+\[
+\sqrt{x + 6} + x = 0
+\]
+
+\paragraph{Solution:}
+
+Step 1: Isolate the radical expression:
+\[
+\sqrt{x + 6} = -x
+\]
+
+Step 2: Square both sides to eliminate the square root:
+\[
+(\sqrt{x + 6})^2 = (-x)^2 \quad \Rightarrow \quad x + 6 = x^2
+\]
+
+Step 3: Rearrange into standard quadratic form:
+\[
+x^2 - x - 6 = 0
+\]
+
+Step 4: Factor the quadratic:
+\[
+(x - 3)(x + 2) = 0
+\]
+
+Step 5: Solve for \( x \):
+\[
+x = 3 \quad \text{or} \quad x = -2
+\]
+
+Step 6: Check for extraneous solutions:
+We must verify each solution in the **original** equation because squaring both sides can introduce invalid (extraneous) solutions.
+
+Check \( x = 3 \):
+\[
+\sqrt{3 + 6} + 3 = \sqrt{9} + 3 = 3 + 3 = 6 \neq 0
+\quad \text{Not valid}
+\]
+
+Check \( x = -2 \):
+\[
+\sqrt{-2 + 6} + (-2) = \sqrt{4} - 2 = 2 - 2 = 0
+\quad \text{Valid}
+\]
+
+\paragraph{Final Answer:}
+\[
+\boxed{x = -2}
+\]
+
+\paragraph{Summary:}
+To solve radical equations:
+\begin{itemize}
+  \item Isolate the radical expression.
+  \item Eliminate the radical by squaring both sides.
+  \item Solve the resulting equation.
+  \item Always check for extraneous solutions in the original equation.
+\end{itemize}
+
+\subsection{Multivariable Equations}
+
+Multivariable equations contain two or more variables. These types of equations are often manipulated to solve for one variable in terms of the others. This is useful in algebra, physics, and systems of equations.
+
+\paragraph{Example:} Solve for \( z \) in the equation:
+\[
+3x - y + 2z = 12
+\]
+
+\paragraph{Solution:}
+
+Step 1: Isolate the term containing \( z \):
+\[
+2z = 12 - 3x + y
+\]
+
+Step 2: Divide both sides by 2 to solve for \( z \):
+\[
+z = \frac{12 - 3x + y}{2}
+\]
+
+Step 3 (Optional): Rearranged for clarity:
+\[
+z = \frac{-3x + y + 12}{2}
+\quad \text{or} \quad
+z = \frac{-3x}{2} + \frac{y}{2} + 6
+\]
+
+\paragraph{Summary:}
+To solve a multivariable equation for a specific variable:
+\begin{itemize}
+  \item Move all other terms to the opposite side.
+  \item Isolate the desired variable using inverse operations (e.g., divide or subtract).
+  \item Optionally simplify or rearrange the result for readability.
+\end{itemize}
+
+\subsection{Multivariable Rational Equations}
+
+Multivariable rational equations involve rational expressions with two or more variables. A common method for solving such equations is to eliminate all denominators by multiplying through by the least common denominator (LCD). This avoids dealing with complex fractions.
+
+\paragraph{Example:} Solve for \( x \) in the equation:
+\[
+\frac{1}{x} - \frac{m}{y} = p
+\]
+
+\paragraph{Solution:}
+
+Step 1: Identify the least common denominator (LCD).
+The denominators are \( x \) and \( y \), so:
+\[
+\text{LCD} = xy
+\]
+
+Step 2: Multiply every term by the LCD to eliminate denominators:
+\[
+xy \cdot \left( \frac{1}{x} - \frac{m}{y} \right) = xy \cdot p
+\]
+
+Step 3: Simplify each term:
+\[
+y - mx = pxy
+\]
+
+Step 4: Solve for \( x \):
+First, move the \( y \) to the other side:
+\[
+- mx = pxy - y
+\]
+
+Then divide both sides by \( -m \):
+\[
+x = \frac{y - pxy}{m}
+\]
+
+Step 5 (Optional): Rearranged for clarity:
+\[
+x = \frac{y(1 - px)}{m}
+\]
+
+This form expresses \( x \) implicitly (it appears on both sides). You may stop here unless solving explicitly for \( x \) is required (which would involve further algebra, possibly leading to a quadratic).
+
+\paragraph{Summary:}
+To solve multivariable rational equations:
+\begin{itemize}
+  \item Find the least common denominator (LCD) and multiply through to eliminate all fractions.
+  \item Simplify the resulting equation and isolate the desired variable.
+  \item Watch for variables that appear on both sides—further algebraic manipulation may be necessary.
+  \item Always check for restrictions (denominators cannot be zero).
+\end{itemize}
+
 \end{document}
