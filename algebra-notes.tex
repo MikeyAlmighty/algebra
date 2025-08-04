@@ -2855,7 +2855,7 @@ where \( Q(x) \neq 0 \).
   \item State any restrictions (values that make the denominator zero).
 \end{enumerate}
 
-\begin{example}
+\begin{tcolorbox}
 Simplify:
 \[
 \frac{3x^4 - 9x^3}{6x^2}
@@ -2879,7 +2879,7 @@ Denominator: \( 6x^2 \)
 \[
 \frac{x(x - 3)}{2}, \quad x \neq 0
 \]
-\end{example}
+\end{tcolorbox}
 
 \begin{tcolorbox}[colback=blue!5!white, colframe=blue!80!black, title=Tips]
 \begin{itemize}
@@ -2903,7 +2903,7 @@ To \textbf{add or subtract rational functions}, you combine them over a common d
   \item State any restrictions on the variable.
 \end{enumerate}
 
-\begin{example}
+\begin{tcolorbox}
 Add:
 \[
 \frac{2}{x} + \frac{3}{x + 1}
@@ -2924,9 +2924,9 @@ Add:
 
 \textbf{Restrictions:} \( x \neq 0, x \neq -1 \)
 
-\end{example}
+\end{tcolorbox}
 
-\begin{example}
+\begin{tcolorbox}
 Subtract:
 \[
 \frac{x}{x - 2} - \frac{3}{x}
@@ -2947,7 +2947,7 @@ Subtract:
 
 \textbf{Restrictions:} \( x \neq 0, x \neq 2 \)
 
-\end{example}
+\end{tcolorbox}
 
 \begin{tcolorbox}[colback=yellow!5!white, colframe=yellow!80!black, title=Note]
 \begin{itemize}
@@ -2969,7 +2969,7 @@ When adding or subtracting rational expressions, you must first express each fra
   \item Rewrite each expression with the LCD as the new denominator.
 \end{enumerate}
 
-\begin{example}
+\begin{tcolorbox}
 Add:
 \[
 \frac{3}{x^2 - x} + \frac{2}{x^2 - 1}
@@ -2994,7 +2994,7 @@ x^2 - x = x(x - 1), \quad x^2 - 1 = (x - 1)(x + 1)
 
 \textbf{Restrictions:} \( x \neq 0, \pm1 \)
 
-\end{example}
+\end{tcolorbox}
 
 \begin{tcolorbox}[colback=blue!5!white, colframe=blue!80!black, title=Tips for Factoring]
 \begin{itemize}
@@ -3141,5 +3141,152 @@ x - 1 = 0 \implies x = 1.
 \[
 x \neq -3, -2, 1, 2.
 \]
+
+\section{Advanced Equations}
+
+\subsection{Direct Variation}
+
+In a direct variation, two variables change in the same direction: as one increases, so does the other. The relationship can be written as:
+
+\[
+y = kx
+\]
+
+Where:
+\begin{itemize}
+  \item \( y \) is the dependent variable
+  \item \( x \) is the independent variable
+  \item \( k \) is the constant of variation (slope)
+\end{itemize}
+
+\begin{tcolorbox}[colback=green!5!white, colframe=green!60!black, title=Key Characteristics]
+\begin{itemize}
+  \item The graph is a straight line passing through the origin (0, 0).
+  \item If \( k > 0 \), \( y \) increases with \( x \).
+  \item If \( k < 0 \), \( y \) decreases with \( x \).
+\end{itemize}
+\end{tcolorbox}
+
+\textbf{Example:} Suppose \( y \) varies directly with \( x \), and \( y = 10 \) when \( x = 2 \). Find the equation.
+
+\begin{align*}
+y &= kx \\
+10 &= k(2) \\
+k &= 5
+\end{align*}
+
+\textbf{So the equation is:}
+\[
+y = 5x
+\]
+
+\textbf{Check:} When \( x = 4 \), \( y = 5 \cdot 4 = 20 \)
+
+\begin{center}
+\begin{tikzpicture}[scale=0.7]
+  \draw[very thin,color=gray!30] (-3.5,-3.5) grid (3.5,3.5);
+  \draw[->,thick] (-4,0) -- (4,0) node[right] {\( x \)};
+  \draw[->,thick] (0,-4) -- (0,4) node[above] {\( y \)};
+  \draw[domain=-1.2:1.2,smooth,variable=\x,blue,thick]
+    plot ({\x},{5*\x});
+  \node[blue] at (0.8,3.2) {\scriptsize \( y = 5x \)};
+\end{tikzpicture}
+\end{center}
+
+\subsection{Inverse Variation}
+
+In an \textbf{inverse variation}, two variables are related such that as one increases, the other decreases proportionally. This relationship is modeled by the equation:
+\[
+y = \frac{k}{x}
+\]
+where \( k \) is a constant and \( x \neq 0 \). Here, \( y \) varies inversely with \( x \).
+
+\textbf{Key features:}
+\begin{itemize}
+  \item The product \( xy = k \) is constant.
+  \item The graph is a \textbf{hyperbola}, not a straight line.
+  \item The curve never touches the \( x \)- or \( y \)-axis (asymptotes).
+\end{itemize}
+
+\textbf{Example:}
+
+If \( y \) varies inversely with \( x \), and \( y = 2 \) when \( x = 3 \), find the equation relating \( x \) and \( y \).
+
+\[
+xy = k \quad \Rightarrow \quad 2 \cdot 3 = 6 \Rightarrow k = 6
+\]
+So, the equation is:
+\[
+y = \frac{6}{x}
+\]
+
+\begin{center}
+\begin{tikzpicture}[scale=0.8]
+  \draw[very thin, color=gray!30] (-5,-5) grid (5,5);
+  \draw[->,thick] (-5.2,0) -- (5.2,0) node[right] {\( x \)};
+  \draw[->,thick] (0,-5.2) -- (0,5.2) node[above] {\( y \)};
+  \draw[domain=0.5:5, smooth, variable=\x, blue, thick] plot ({\x}, {6/\x});
+  \draw[domain=-5:-0.5, smooth, variable=\x, blue, thick] plot ({\x}, {6/\x});
+  \node[blue] at (3,1.4) {\scriptsize \( y = \frac{6}{x} \)};
+\end{tikzpicture}
+\end{center}
+
+\subsection{Decimal Equations}
+
+Decimal equations contain decimal coefficients and constants. A common method to solve them is to eliminate decimals by multiplying the entire equation by a power of 10, converting all decimals to whole numbers. This often simplifies the solving process.
+
+\paragraph{Example:} Solve the equation
+\[
+0.5x + 1.2 = 3.7
+\]
+
+\paragraph{Solution:}
+Step 1: Identify the smallest power of 10 that will eliminate the decimals. Here, the decimals go up to the tenths place, so multiply by 10:
+\[
+10 \times (0.5x + 1.2) = 10 \times 3.7
+\]
+which gives
+\[
+5x + 12 = 37
+\]
+
+Step 2: Solve the resulting whole number equation:
+\[
+5x = 37 - 12 = 25
+\]
+\[
+x = \frac{25}{5} = 5
+\]
+
+\paragraph{Summary:} Multiplying to clear decimals turns the original decimal equation into a simpler integer equation, making algebraic manipulation easier and reducing calculation errors.
+
+\subsection{Fractional Equations}
+
+Fractional equations are equations that contain one or more fractions with variables in the numerator, denominator, or both. To solve these equations, it is often helpful to eliminate the fractions by multiplying both sides of the equation by the least common denominator (LCD) of all fractions involved.
+
+\paragraph{Example:} Solve the equation
+\[
+\frac{2x}{3} - \frac{5}{6} = \frac{x}{2}
+\]
+
+\paragraph{Solution:}
+
+Step 1: Identify the least common denominator (LCD) of the fractions: the denominators are 3, 6, and 2. The LCD is 6.
+
+Step 2: Multiply every term on both sides of the equation by 6 to eliminate denominators:
+\[
+6 \times \frac{2x}{3} - 6 \times \frac{5}{6} = 6 \times \frac{x}{2}
+\]
+which simplifies to:
+\[
+4x - 5 = 3x
+\]
+
+Step 3: Solve the resulting equation:
+\[
+4x - 3x = 5 \quad \Rightarrow \quad x = 5
+\]
+
+\paragraph{Summary:} Multiplying both sides of a fractional equation by the LCD is a reliable method to clear denominators, simplifying the equation to one with whole numbers that can be solved using standard algebraic techniques.
 
 \end{document}
