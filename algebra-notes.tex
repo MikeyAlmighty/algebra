@@ -3501,4 +3501,123 @@ To solve multivariable rational equations:
   \item Always check for restrictions (denominators cannot be zero).
 \end{itemize}
 
+\section{Advanced Systems of Equations}
+
+\subsection{Systems with Subscripts}
+
+Systems of equations may include variables with subscripts, which often arise in applied problems such as physics, chemistry, or engineering. Here's an example of such a system:
+
+\begin{tcolorbox}
+Use any method to find the unique solution to the system of equations:
+\[
+\begin{aligned}
+R_M T_M &= 200 \\
+R_P &= 5 R_M \\
+R_P T_P &= 500 \\
+T_P &= 3 - T_M
+\end{aligned}
+\]
+\end{tcolorbox}
+
+\paragraph{Solution:}
+We will solve this system using substitution.
+
+\textbf{Step 1:} From the last equation,
+\[
+T_P = 3 - T_M
+\]
+
+\textbf{Step 2:} Substitute into the third equation:
+\[
+R_P (3 - T_M) = 500
+\]
+
+\textbf{Step 3:} From the second equation, substitute \( R_P = 5 R_M \):
+\[
+5 R_M (3 - T_M) = 500
+\]
+
+\textbf{Step 4:} Expand:
+\[
+15 R_M - 5 R_M T_M = 500
+\]
+
+\textbf{Step 5:} From the first equation, solve for \( R_M \):
+\[
+R_M = \frac{200}{T_M}
+\]
+
+\textbf{Step 6:} Substitute into the previous expression:
+\[
+15 \cdot \frac{200}{T_M} - 5 \cdot \frac{200}{T_M} \cdot T_M = 500
+\]
+
+Simplify both terms:
+\[
+\frac{3000}{T_M} - 1000 = 500
+\]
+
+\textbf{Step 7:} Solve for \( T_M \):
+\[
+\frac{3000}{T_M} = 1500 \quad \Rightarrow \quad T_M = \frac{3000}{1500} = 2
+\]
+
+\textbf{Step 8:} Back-substitute to find the remaining variables:
+\[
+R_M = \frac{200}{2} = 100, \quad R_P = 5 \cdot 100 = 500, \quad T_P = 3 - 2 = 1
+\]
+
+\textbf{Final Answer:}
+\[
+\boxed{
+T_M = 2, \quad R_M = 100, \quad R_P = 500, \quad T_P = 1
+}
+\]
+
+\subsection{Uniform Motion}
+
+In uniform motion problems, distance is calculated using the formula:
+
+\[
+\text{Distance} = \text{Rate} \times \text{Time}
+\]
+
+\textbf{Example:}
+
+A ball flies horizontally toward a gym wall at \( 30 \, \text{m/s} \). After bouncing off the wall, it returns horizontally to its starting point at \( 20 \, \text{m/s} \). The total time of flight is \( 2 \, \text{seconds} \). How far is the wall from the starting place?
+
+\textbf{Let:}
+\begin{itemize}
+  \item \( d \): distance from the starting point to the wall
+  \item \( t_1 \): time to reach the wall
+  \item \( t_2 \): time to return to the starting point
+\end{itemize}
+
+We know:
+\[
+\begin{aligned}
+&d = 30t_1 \\
+&d = 20t_2 \\
+&t_1 + t_2 = 2
+\end{aligned}
+\]
+
+Substitute \( t_2 = 2 - t_1 \) into the second equation:
+\[
+30t_1 = 20(2 - t_1)
+\]
+\[
+30t_1 = 40 - 20t_1
+\]
+\[
+50t_1 = 40 \quad \Rightarrow \quad t_1 = \frac{40}{50} = 0.8
+\]
+
+Now find the distance:
+\[
+d = 30 \cdot 0.8 = \boxed{24 \, \text{m}}
+\]
+
+\textbf{Answer:} The wall is \fbox{24 meters} away from the starting place.
+
 \end{document}
